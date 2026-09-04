@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.37530.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modex360", "Modex360\Modex360.csproj", "{1B0906B7-A4E9-4513-95EF-66A20A5F00C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Riggy|x86 = Riggy|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B0906B7-A4E9-4513-95EF-66A20A5F00C8}.Riggy|x86.ActiveCfg = Riggy|x86
+		{1B0906B7-A4E9-4513-95EF-66A20A5F00C8}.Riggy|x86.Build.0 = Riggy|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B1D30DF-E514-4C98-A453-9E1A72CDFBEC}
+	EndGlobalSection
+EndGlobal
