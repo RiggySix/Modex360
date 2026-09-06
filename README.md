@@ -20,15 +20,6 @@ I recently got back on the 360 scene after being gone for over a decade and I st
 1. Clone the repository.
 2. Open the solution in Visual Studio and build.
 
-## Notes
-- The Achievement Unlocker is not working.
-- The Avatar Award Unlocker is not working.
-- The Game Adder is not working.
-- The Gamercard Viewer has been unlisted. (No longer supported)
-- Stripped down a lot of the Horizon internal dev functions and server stuff
-
-**If I get a chance I will try to get them working at some point. Or you can go support the Horizon creators and buy a Pro (Diamond) membership.**
-
 ## To-do
 - More RTE tools are coming soon, feel free to message me on discord (@riggy6) if you are looking for a specific mod tool.
 - More tools are coming like a file manager, memory tools, etc.
