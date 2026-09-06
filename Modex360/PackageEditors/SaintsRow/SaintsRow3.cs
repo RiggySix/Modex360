@@ -30,7 +30,7 @@ namespace Modex360.PackageEditors.SaintsRow
         {
             base.enablePanels(enable);
 
-            panelEx3.Enabled = enable && Server.User.isLogged && Server.User.isDiamond;
+            panelEx3.Enabled = enable;
         }
 
         public override bool Entry()
@@ -105,15 +105,12 @@ namespace Modex360.PackageEditors.SaintsRow
                     });
                 }
                 */
-                if (Server.User.isLogged && Server.User.isDiamond)
-                {
                     int x = 0;
                     foreach (DataGridViewRow row in this.dtgUpgrades.Rows)
                     {
                         this.UpgradeManager.Table_Available[UpgradeData.GameUpgrades[x++].Ident] = Convert.ToBoolean(row.Cells[2].Value);
                     }
-                    this.GameSave.SaveUpgradeTable(this.UpgradeManager.SerializeTable(this.UpgradeManager.Table_Available), (Server.User.isDiamond) && (Server.User.isLogged));
-                }
+                    this.GameSave.SaveUpgradeTable(this.UpgradeManager.SerializeTable(this.UpgradeManager.Table_Available), true);
 
                 this.GameSave.UnlimitedSprint = chkUnlmSprint.Checked;
                 this.GameSave.UnlockAllWeapons = chkUnlockAllWeapons.Checked;
@@ -296,27 +293,24 @@ namespace Modex360.PackageEditors.SaintsRow
             }
             if (this.dtgUpgrades.Rows.Count == 0)
             {
-                if (Server.User.isLogged && Server.User.isDiamond)
+                if (UpgradeManager == null)
                 {
-                    if (UpgradeManager == null)
+                    var upgradeData = this.GameSave.GetUpgradeData();
+                    UpgradeManager = new UpgradeData(upgradeData[0], upgradeData[1], SettingAsUIntArray(193));
+                }
+                foreach (KeyValuePair<uint, bool> unlock in UpgradeManager.Table_Available)
+                {
+                    foreach (UpgradeEntry upgrade in UpgradeData.GameUpgrades)
                     {
-                        var upgradeData = this.GameSave.GetUpgradeData();
-                        UpgradeManager = new UpgradeData(upgradeData[0], upgradeData[1], SettingAsUIntArray(193));
-                    }
-                    foreach (KeyValuePair<uint, bool> unlock in UpgradeManager.Table_Available)
-                    {
-                        foreach (UpgradeEntry upgrade in UpgradeData.GameUpgrades)
+                        if (unlock.Key == upgrade.Ident)
                         {
-                            if (unlock.Key == upgrade.Ident)
-                            {
-                                this.dtgUpgrades.Rows.Add(new object[]
-                            {
+                            this.dtgUpgrades.Rows.Add(new object[]
+                        {
                                 upgrade.Name,
                                 upgrade.Description,
                                 UpgradeManager.Table_Available[upgrade.Ident],
                                 UpgradeManager.Table_Unlocked[upgrade.Ident]
-                            });
-                            }
+                        });
                         }
                     }
                 }

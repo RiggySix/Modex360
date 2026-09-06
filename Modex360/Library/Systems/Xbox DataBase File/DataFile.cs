@@ -20,7 +20,7 @@ namespace XboxDataBaseFile
         AVATAR = 6
     }
 
-    public class DataFileId 
+    public class DataFileId
     {
         public Namespace Namespace;
         public ulong Id;
@@ -177,7 +177,7 @@ namespace XboxDataBaseFile
         }
         private SyncIndexRecord FindRecord(ulong Id)
         {
-            return Records.Find(delegate(SyncIndexRecord record)
+            return Records.Find(delegate (SyncIndexRecord record)
             {
                 return record.Id == Id;
             });
@@ -282,13 +282,13 @@ namespace XboxDataBaseFile
 
         public long Size
         {
-            get { return this.Stream.Length;}
+            get { return this.Stream.Length; }
         }
 
         private MemoryStream Stream = new MemoryStream();
         private SettingRecord Record;
 
-        public TitleSetting(uint SettingId, object DataLength ) 
+        public TitleSetting(uint SettingId, object DataLength)
         {
             Record = new SettingRecord(SettingId, 0x06);
             Record.cbData = Convert.ToUInt32(DataLength);
@@ -385,7 +385,7 @@ namespace XboxDataBaseFile
         public List<DataFileRecord> DataFileRecords;
         public List<FreeRecord> FreeRecords;
 
-        private Namespace[] Namespaces = new Namespace[] {Namespace.ACHIEVEMENTS, 
+        private Namespace[] Namespaces = new Namespace[] {Namespace.ACHIEVEMENTS,
             Namespace.IMAGES, Namespace.SETTINGS, Namespace.TITLES, Namespace.STRINGS, Namespace.AVATAR};
         public DataFile()
         {
@@ -504,14 +504,14 @@ namespace XboxDataBaseFile
         /* Base class functions */
         private DataFileRecord FindDFREntry(DataFileId tagId)
         {
-            return this.DataFileRecords.Find(delegate(DataFileRecord dfr)
+            return this.DataFileRecords.Find(delegate (DataFileRecord dfr)
             {
                 return dfr.Id.Equals(tagId);
             });
         }
         private int FindDFRIndex(DataFileId tagId)
         {
-            return this.DataFileRecords.FindIndex(delegate(DataFileRecord dfr)
+            return this.DataFileRecords.FindIndex(delegate (DataFileRecord dfr)
             {
                 return dfr.Id.Equals(tagId);
             });
@@ -569,7 +569,7 @@ namespace XboxDataBaseFile
         }
         private int FreeEntryMatch(int DataSize)
         {
-            return this.FreeRecords.FindIndex(delegate(FreeRecord rec)
+            return this.FreeRecords.FindIndex(delegate (FreeRecord rec)
             {
                 return rec.Size >= DataSize;
             });
@@ -664,10 +664,12 @@ namespace XboxDataBaseFile
 
                 for (var x = 0; x < record.Records.Count; x++)
                 {
-                    Records.Add(this.FindRecordEntry(new DataFileId() { Id = record.Records[x].Id, Namespace = Namespace }));
+                    DataFileRecord dfRecord = this.FindRecordEntry(new DataFileId() { Id = record.Records[x].Id, Namespace = Namespace });
+                    if (dfRecord != null)
+                        Records.Add(dfRecord);
                 }
             }
-            return Records;        
+            return Records;
         }
 
         /* Write section */

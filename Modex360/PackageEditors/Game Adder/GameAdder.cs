@@ -1,10 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using Modex360.Functions;
 using XboxDataBaseFile;
@@ -12,6 +8,7 @@ using XContent;
 using System.Threading;
 using Modex360.Forms;
 using System.IO;
+using System.Reflection;
 
 namespace Modex360.PackageEditors.Game_Adder
 {
@@ -52,7 +49,7 @@ namespace Modex360.PackageEditors.Game_Adder
                 row.CreateCells(listAchievements);
                 row.Cells[0].Value = ach.AchievementName;
                 row.Cells[1].Value = ach.Credit.ToString();
-                row.Cells[2].Value = ach.LockedDescription.Length == 0 ? SettingAsString(49) : ach.LockedDescription;
+                row.Cells[2].Value = ach.LockedDescription.Length == 0 ? "Hidden Achievement" : ach.LockedDescription;
                 listAchievements.Rows.Add(row);
             }
         }
@@ -68,7 +65,7 @@ namespace Modex360.PackageEditors.Game_Adder
                     DataGridViewRow row = new DataGridViewRow();
                     row.CreateCells(listAwards);
                     row.Cells[0].Value = aw.Name;
-                    row.Cells[1].Value = aw.UnawardedText.Length == 0 ? SettingAsString(82) : aw.UnawardedText;
+                    row.Cells[1].Value = aw.UnawardedText.Length == 0 ? "Hidden Award" : aw.UnawardedText;
                     listAwards.Rows.Add(row);
                 }
                 tabAwards.Visible = true;
@@ -115,16 +112,16 @@ namespace Modex360.PackageEditors.Game_Adder
 
         private void updateQueueTab()
         {
-            tabQueue.Text = SettingAsString(18);
+            tabQueue.Text = "Queue";
             if (listQueue.Rows.Count > 0)
-                tabQueue.Text += String.Format(SettingAsString(29), listQueue.Rows.Count);
+                tabQueue.Text += String.Format(" ({0})", listQueue.Rows.Count);
             rbPackageEditor.Refresh();
         }
 
         public override bool Entry()
         {
-            Text = SettingAsString(196) + (Account == null ? "Unknown" : Account.Info.GamerTag);
-            cancelText = SettingAsString(103);
+            Text = "Game Adder - " + (Account == null ? "Unknown" : Account.Info.GamerTag);
+            cancelText = "Cancel";
 
             this.ProfileFile = new ProfileFile(this.Package, 0xfffe07d1);
             this.ProfileFile.Read();
@@ -132,8 +129,8 @@ namespace Modex360.PackageEditors.Game_Adder
             populateTitleRecords();
 
             titleAdder = new TitlePlayedAdder(ProfileFile);
-            if ((this.Package.StfsContentPackage.GetDirectoryEntryIndex(SettingAsString(45)) != SettingAsInt(8)))
-                Pec = new XContent.PEC(this.Package.StfsContentPackage.GetEndianIO(SettingAsString(45)));
+            if ((this.Package.StfsContentPackage.GetDirectoryEntryIndex("PEC") != -1))
+                Pec = new XContent.PEC(this.Package.StfsContentPackage.GetEndianIO("PEC"));
             tadder = new TitleAdder(this.Package.StfsContentPackage, Pec);
             populateTitleList();
 
@@ -206,8 +203,8 @@ namespace Modex360.PackageEditors.Game_Adder
             if (listTitles.SelectedRows.Count > 0)
             {
                 cmdAdd.Enabled = listTitles.Enabled = false;
-                cmdAdd.Text = SettingAsString(158);
-                int loops = (int)Math.Ceiling((decimal)listTitles.SelectedRows.Count / SettingAsInt(181));
+                cmdAdd.Text = "Adding...";
+                int loops = (int)Math.Ceiling((decimal)listTitles.SelectedRows.Count / 10);
                 int amountLeft = listTitles.SelectedRows.Count;
                 int f = 0;
                 downloadThread = new Thread((ThreadStart)delegate
@@ -218,10 +215,10 @@ namespace Modex360.PackageEditors.Game_Adder
                         for (int x = 0; x < loops; x++)
                         {
                             List<string> tids = new List<string>();
-                            int toDo = (amountLeft >= SettingAsInt(181)) ? SettingAsInt(181) : amountLeft;
+                            int toDo = (amountLeft >= 10) ? 10 : amountLeft;
                             for (int i = f; i < toDo; i++)
                                 tids.Add((string)listTitles.SelectedRows[i].Tag);
-                            if (Server.GameAdder.reqAchievementInfo(tids.ToArray()))
+                            if (fetchRiggyGPD(tids.ToArray()))
                             {
                                 if (listTitles.Rows.Count == 0)
                                     return;
@@ -249,11 +246,11 @@ namespace Modex360.PackageEditors.Game_Adder
                     Main.mainForm.Invoke((MethodInvoker)delegate
                     {
                         if (!errorThrown && f > 0)
-                            UI.messageBox(SettingAsString(146) + f.ToString() + SettingAsString(244)
-                                + (f == SettingAsInt(151) ? String.Empty : SettingAsString(106)) + SettingAsString(243),
-                                SettingAsString(72), MessageBoxIcon.Error, MessageBoxButtons.OK);
+                            UI.messageBox("Failed to add " + f.ToString() + " game"
+                                + (f == 1 ? String.Empty : "s") + " to your queue",
+                                "Error", MessageBoxIcon.Error, MessageBoxButtons.OK);
                         txtSearch.Text = String.Empty;
-                        cmdAdd.Text = SettingAsString(117);
+                        cmdAdd.Text = "Add";
                         cmdAdd.Enabled = listTitles.Enabled = true;
                     });
                 });
@@ -279,7 +276,7 @@ namespace Modex360.PackageEditors.Game_Adder
             {
                 this.Pec = new PEC();
                 this.Pec.Create(this.Package.StfsContentPackage, this.Package.Header.Metadata.Creator);
-                this.Pec = new PEC(this.Package.StfsContentPackage.GetEndianIO(SettingAsString(45)));
+                this.Pec = new PEC(this.Package.StfsContentPackage.GetEndianIO("PEC"));
 
                 tadder = new TitleAdder(this.Package.StfsContentPackage, this.Pec);
             }
@@ -305,7 +302,7 @@ namespace Modex360.PackageEditors.Game_Adder
                         Main.mainForm.Invoke((MethodInvoker)delegate
                         {
                             cmdAddToProfile.Enabled = false;
-                            cmdAddToProfile.Text = SettingAsString(10);
+                            cmdAddToProfile.Text = "Adding to profile...";
                         });
                         while (listQueue.Rows.Count > 0)
                         {
@@ -335,7 +332,7 @@ namespace Modex360.PackageEditors.Game_Adder
                         Main.mainForm.Invoke((MethodInvoker)delegate
                         {
                             populateTitleRecords();
-                            cmdAddToProfile.Text = SettingAsString(237);
+                            cmdAddToProfile.Text = "Add to Profile";
                             cmdAddToProfile.Enabled = true;
                         });
                     }
@@ -387,7 +384,7 @@ namespace Modex360.PackageEditors.Game_Adder
         private void cmdNext_Click(object sender, EventArgs e)
         {
             if (txtSearch.Text.Length != 0 && searchIndex.Count != 0)
-                listTitles.FirstDisplayedScrollingRowIndex = searchIndex[searchIndexTop++ % searchIndex.Count];
+                listTitles.FirstDisplayedScrollingRowIndex = searchIndex[++searchIndexTop % searchIndex.Count];
         }
 
         private bool haltPopulate = false;
@@ -425,6 +422,146 @@ namespace Modex360.PackageEditors.Game_Adder
                 Clipboard.Clear();
                 Clipboard.SetText((string)listTitles.SelectedRows[0].Cells[0].Value);
             }
+        }
+
+        private string gpdLibraryZipPath;
+        private bool gpdLibraryZipChecked = false;
+        private void loadRiggyGPD()
+        {
+            if (gpdLibraryZipChecked)
+                return;
+            gpdLibraryZipChecked = true;
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            using (Stream stream = assembly.GetManifestResourceStream("Modex360.Library.Systems.GPD.zip"))
+            {
+                if (stream == null)
+                    return;
+                string tempPath = Path.Combine(
+                    Path.GetTempPath(),
+                    "Riggy_GPD.zip");
+                using (FileStream fileStream = new FileStream(
+                    tempPath,
+                    FileMode.Create,
+                    FileAccess.Write))
+                {
+                    byte[] buffer = new byte[8192];
+                    int bytesRead;
+                    while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
+                    {
+                        fileStream.Write(buffer, 0, bytesRead);
+                    }
+                }
+                gpdLibraryZipPath = tempPath;
+            }
+        }
+
+        private byte[] readGpdLibraryEntry(string entryPath)
+        {
+            if (gpdLibraryZipPath == null)
+                return null;
+            return RiggyGPDReader.ReadEntry(gpdLibraryZipPath, entryPath);
+        }
+
+        private bool fetchRiggyGPD(string[] tids)
+        {
+            loadRiggyGPD();
+            if (gpdLibraryZipPath == null)
+                return false;
+
+            foreach (string tid in tids)
+            {
+                if (!Server.GameAdder.titleExists(tid))
+                    continue;
+
+                Server.GameAdder.TitleTemplate title = Server.GameAdder.getTitle(tid);
+                byte[] achBytes = readGpdLibraryEntry("Achievements/" + tid + ".gpd");
+
+                if (achBytes != null)
+                {
+                    DataFile achDf = new DataFile(
+                        new EndianIO(achBytes, EndianType.BigEndian)
+                    );
+
+                    achDf.Read();
+                    title.Achievements.Clear();
+
+                    foreach (DataFileRecord entry in achDf.FindDataEntries(Namespace.ACHIEVEMENTS))
+                    {
+                        AchievementRecord rec = new AchievementRecord(
+                            achDf.SeekToRecord(entry.Entry)
+                        );
+
+                        title.Achievements.Add(
+                            new Server.GameAdder.TitleAchievement()
+                            {
+                                AchievementName = rec.Label,
+                                Credit = (int)rec.cred,
+                                ID = rec.id,
+                                ImageID = rec.imageId,
+                                Flags = rec.flags,
+                                LockedDescription = rec.Unachieved,
+                                UnlockedDescription = rec.Description
+                            }
+                        );
+                    }
+
+                    try
+                    {
+                        title.Tile = achDf.ReadRecord(
+                            new DataFileId()
+                            {
+                                Namespace = Namespace.IMAGES,
+                                Id = 0x8000
+                            }
+                        );
+                    }
+                    catch{}
+                }
+
+                if (title.Meta.TotalAwards > 0)
+                {
+                    byte[] awardBytes = readGpdLibraryEntry(
+                        "Awards/" + tid + ".gpd"
+                    );
+
+                    if (awardBytes != null)
+                    {
+                        DataFile awardDf = new DataFile(
+                            new EndianIO(awardBytes, EndianType.BigEndian)
+                        );
+
+                        awardDf.Read();
+                        title.Awards.Clear();
+
+                        foreach (DataFileRecord entry in awardDf.FindDataEntries(Namespace.AVATAR))
+                        {
+                            if (entry.Id.Id == 1 || entry.Id.Id == 2)
+                                continue;
+
+                            AvatarAssetRecord rec = new AvatarAssetRecord(
+                                awardDf.SeekToRecord(entry.Entry),
+                                entry.Id.Id
+                            );
+
+                            title.Awards.Add(
+                                new Server.GameAdder.TitleAward()
+                                {
+                                    cb = rec.cb,
+                                    id = rec.id,
+                                    Id = rec.Id,
+                                    imageId = rec.imageId,
+                                    flags = rec.flags,
+                                    reserved = rec.reserved,
+                                    Name = rec.Name,
+                                    Description = rec.Description,
+                                    UnawardedText = rec.UnawardedText
+                                }
+                            );
+                        }
+                    }
+                }
+            }
+            return true;
         }
     }
 }

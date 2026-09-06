@@ -27,10 +27,10 @@ namespace Modex360
 
             // Profile Modders
             addForm(FormID.AccountEditor, typeof(PackageEditors.Account_Editor.AccountEditor), "Account Editor", FormType.Profile_Modder, Resources.Account_Thumb);
-            // NOT WORKING //addForm(FormID.AchievementUnlocker, typeof(PackageEditors.Achievement_Unlocker.AchievementUnlocker), "Achievement Unlocker", FormType.Profile_Modder, Resources.Unlocker_Thumb, false);
-            // NOT WORKING //addForm(FormID.AvatarAwardUnlocker, typeof(PackageEditors.Avatar_Award_Unlocker.AvatarAwardUnlocker), "Avatar Award Unlocker", FormType.Profile_Modder, Resources.AvatarAward_Thumb);
+            addForm(FormID.AchievementUnlocker, typeof(PackageEditors.Achievement_Unlocker.AchievementUnlocker), "Achievement Unlocker", FormType.Profile_Modder, Resources.Unlocker_Thumb, false);
+            addForm(FormID.AvatarAwardUnlocker, typeof(PackageEditors.Avatar_Award_Unlocker.AvatarAwardUnlocker), "Avatar Award Unlocker", FormType.Profile_Modder, Resources.AvatarAward_Thumb);
             addForm(FormID.AvatarColorEditor, typeof(PackageEditors.Avatar_Color_Editor.AvatarColorEditor), "Avatar Color Editor", FormType.Profile_Modder, Resources.AvatarEditor_Thumb);
-            // NOT WORKING //addForm(FormID.GameAdder, typeof(PackageEditors.Game_Adder.GameAdder), "Game Adder", FormType.Profile_Modder, Resources.Adder_Thumb);
+            addForm(FormID.GameAdder, typeof(PackageEditors.Game_Adder.GameAdder), "Game Adder", FormType.Profile_Modder, Resources.Adder_Thumb);
             addForm(FormID.ProfileDataEditor, typeof(PackageEditors.Profile_Data_Editor.ProfileDataEditor), "Profile Data Editor", FormType.Profile_Modder, Resources.ProfileEditor_Thumb);
             addForm(FormID.BattleBlockTheater, typeof(PackageEditors.BattleBlock_Theater.BattleBlockTheater), "BattleBlock Theater", FormType.GPD_Modder, Resources.BattleBlock_Theater_Thumb);
             addForm(FormID.CastleCrashers, typeof(PackageEditors.Castle_Crashers.CastleCrashers), "Castle Crashers", FormType.GPD_Modder, Resources.CC_Thumb);

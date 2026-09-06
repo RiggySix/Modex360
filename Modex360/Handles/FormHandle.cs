@@ -77,7 +77,7 @@ namespace Modex360
                         : FatxHandle.Devices[fatxDevice].Handle.LoadFileToIO((fatxPath)));
                 }
             }
-                
+
             Forms.Add(_lastIndex++, nC);
             return _lastIndex - 1;
         }
@@ -132,6 +132,7 @@ namespace Modex360
             private IEditorControl _activeForm;
             internal string FileName = String.Empty;
             internal XContentPackage Package = new XContentPackage();
+            internal XContent.PEC Pec;
 
             internal void KillLastForm()
             {

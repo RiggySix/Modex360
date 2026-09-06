@@ -22,7 +22,7 @@ namespace Modex360.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Modex360.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Modex360.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Modex360.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap About_Thumb {
+        public static System.Drawing.Bitmap About_Thumb {
             get {
                 object obj = ResourceManager.GetObject("About_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AboutLogo {
+        public static System.Drawing.Bitmap AboutLogo {
             get {
                 object obj = ResourceManager.GetObject("AboutLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AC2_Thumb {
+        public static System.Drawing.Bitmap AC2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("AC2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AC3_Thumb {
+        public static System.Drawing.Bitmap AC3_Thumb {
             get {
                 object obj = ResourceManager.GetObject("AC3_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AC4_Thumb {
+        public static System.Drawing.Bitmap AC4_Thumb {
             get {
                 object obj = ResourceManager.GetObject("AC4_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ACBrotherhood_Thumb {
+        public static System.Drawing.Bitmap ACBrotherhood_Thumb {
             get {
                 object obj = ResourceManager.GetObject("ACBrotherhood_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Account_Thumb {
+        public static System.Drawing.Bitmap Account_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Account_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +133,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ACR_Thumb {
+        public static System.Drawing.Bitmap ACR_Thumb {
             get {
                 object obj = ResourceManager.GetObject("ACR_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ACRogue_Thumb {
+        public static System.Drawing.Bitmap ACRogue_Thumb {
             get {
                 object obj = ResourceManager.GetObject("ACRogue_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Adder_Thumb {
+        public static System.Drawing.Bitmap Adder_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Adder_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AlanWake_Thumb {
+        public static System.Drawing.Bitmap AlanWake_Thumb {
             get {
                 object obj = ResourceManager.GetObject("AlanWake_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AlignCenter {
+        public static System.Drawing.Bitmap AlignCenter {
             get {
                 object obj = ResourceManager.GetObject("AlignCenter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +183,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AlignLeft {
+        public static System.Drawing.Bitmap AlignLeft {
             get {
                 object obj = ResourceManager.GetObject("AlignLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +193,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AlignRight {
+        public static System.Drawing.Bitmap AlignRight {
             get {
                 object obj = ResourceManager.GetObject("AlignRight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +203,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AvatarAward_Thumb {
+        public static System.Drawing.Bitmap AvatarAward_Thumb {
             get {
                 object obj = ResourceManager.GetObject("AvatarAward_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +213,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AvatarColorRectangle {
+        public static System.Drawing.Bitmap AvatarColorRectangle {
             get {
                 object obj = ResourceManager.GetObject("AvatarColorRectangle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +223,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AvatarEditor_Thumb {
+        public static System.Drawing.Bitmap AvatarEditor_Thumb {
             get {
                 object obj = ResourceManager.GetObject("AvatarEditor_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +233,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AvP_Thumb {
+        public static System.Drawing.Bitmap AvP_Thumb {
             get {
                 object obj = ResourceManager.GetObject("AvP_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +243,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bandage {
+        public static System.Drawing.Bitmap Bandage {
             get {
                 object obj = ResourceManager.GetObject("Bandage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +253,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bastion_Thumb {
+        public static System.Drawing.Bitmap Bastion_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Bastion_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +263,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Batman_Arkham_City_Thumb {
+        public static System.Drawing.Bitmap Batman_Arkham_City_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Batman_Arkham_City_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +273,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BattleBlock_Theater_Thumb {
+        public static System.Drawing.Bitmap BattleBlock_Theater_Thumb {
             get {
                 object obj = ResourceManager.GetObject("BattleBlock_Theater_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -283,7 +283,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bayonetta_Thumb {
+        public static System.Drawing.Bitmap Bayonetta_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Bayonetta_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -293,7 +293,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BBC2_Thumb {
+        public static System.Drawing.Bitmap BBC2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("BBC2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -303,7 +303,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bionic_Commando_Thumb {
+        public static System.Drawing.Bitmap Bionic_Commando_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Bionic_Commando_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -313,7 +313,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bioshock_2_Thumb {
+        public static System.Drawing.Bitmap Bioshock_2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Bioshock_2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -323,7 +323,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BioShock_Infinite_Thumb {
+        public static System.Drawing.Bitmap BioShock_Infinite_Thumb {
             get {
                 object obj = ResourceManager.GetObject("BioShock_Infinite_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -333,7 +333,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BlackSkull {
+        public static System.Drawing.Bitmap BlackSkull {
             get {
                 object obj = ResourceManager.GetObject("BlackSkull", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -343,7 +343,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Blur_Thumb {
+        public static System.Drawing.Bitmap Blur_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Blur_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -353,7 +353,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Borderlands_Thumb {
+        public static System.Drawing.Bitmap Borderlands_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Borderlands_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -363,7 +363,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Brink_Thumb {
+        public static System.Drawing.Bitmap Brink_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Brink_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -373,7 +373,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BrutalLegend_Thumb {
+        public static System.Drawing.Bitmap BrutalLegend_Thumb {
             get {
                 object obj = ResourceManager.GetObject("BrutalLegend_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -383,7 +383,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bulletstorm_Thumb {
+        public static System.Drawing.Bitmap Bulletstorm_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Bulletstorm_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -393,7 +393,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Captcha_Diamond {
+        public static System.Drawing.Bitmap Captcha_Diamond {
             get {
                 object obj = ResourceManager.GetObject("Captcha_Diamond", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -403,7 +403,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CC_Thumb {
+        public static System.Drawing.Bitmap CC_Thumb {
             get {
                 object obj = ResourceManager.GetObject("CC_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -413,7 +413,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CoDAdvancedWarfare_Thumb {
+        public static System.Drawing.Bitmap CoDAdvancedWarfare_Thumb {
             get {
                 object obj = ResourceManager.GetObject("CoDAdvancedWarfare_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -423,7 +423,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CodeVeronicaX_Thumb {
+        public static System.Drawing.Bitmap CodeVeronicaX_Thumb {
             get {
                 object obj = ResourceManager.GetObject("CodeVeronicaX_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -433,7 +433,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CoDGhostsThumb {
+        public static System.Drawing.Bitmap CoDGhostsThumb {
             get {
                 object obj = ResourceManager.GetObject("CoDGhostsThumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -443,7 +443,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Console {
+        public static System.Drawing.Bitmap Console {
             get {
                 object obj = ResourceManager.GetObject("Console", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -453,7 +453,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crackdown_Thumb {
+        public static System.Drawing.Bitmap Crackdown_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Crackdown_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -463,7 +463,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crackdown2_Thumb {
+        public static System.Drawing.Bitmap Crackdown2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Crackdown2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -473,7 +473,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crown1 {
+        public static System.Drawing.Bitmap Crown1 {
             get {
                 object obj = ResourceManager.GetObject("Crown1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -483,7 +483,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crown10 {
+        public static System.Drawing.Bitmap Crown10 {
             get {
                 object obj = ResourceManager.GetObject("Crown10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -493,7 +493,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crown2 {
+        public static System.Drawing.Bitmap Crown2 {
             get {
                 object obj = ResourceManager.GetObject("Crown2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -503,7 +503,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crown3 {
+        public static System.Drawing.Bitmap Crown3 {
             get {
                 object obj = ResourceManager.GetObject("Crown3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -513,7 +513,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crown4 {
+        public static System.Drawing.Bitmap Crown4 {
             get {
                 object obj = ResourceManager.GetObject("Crown4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -523,7 +523,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crown5 {
+        public static System.Drawing.Bitmap Crown5 {
             get {
                 object obj = ResourceManager.GetObject("Crown5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -533,7 +533,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crown6 {
+        public static System.Drawing.Bitmap Crown6 {
             get {
                 object obj = ResourceManager.GetObject("Crown6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -543,7 +543,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crown7 {
+        public static System.Drawing.Bitmap Crown7 {
             get {
                 object obj = ResourceManager.GetObject("Crown7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -553,7 +553,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crown8 {
+        public static System.Drawing.Bitmap Crown8 {
             get {
                 object obj = ResourceManager.GetObject("Crown8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -563,7 +563,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crown9 {
+        public static System.Drawing.Bitmap Crown9 {
             get {
                 object obj = ResourceManager.GetObject("Crown9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -573,7 +573,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crysis2_Thumb {
+        public static System.Drawing.Bitmap Crysis2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Crysis2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -583,7 +583,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Crysis3_Thumb {
+        public static System.Drawing.Bitmap Crysis3_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Crysis3_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -593,7 +593,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Darksiders_Thumb {
+        public static System.Drawing.Bitmap Darksiders_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Darksiders_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -603,7 +603,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DeadIsland_Thumb {
+        public static System.Drawing.Bitmap DeadIsland_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DeadIsland_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -613,7 +613,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DeadRising2_Thumb {
+        public static System.Drawing.Bitmap DeadRising2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DeadRising2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -623,7 +623,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Delete {
+        public static System.Drawing.Bitmap Delete {
             get {
                 object obj = ResourceManager.GetObject("Delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -633,7 +633,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DeviceExplorer_Thumb {
+        public static System.Drawing.Bitmap DeviceExplorer_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DeviceExplorer_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -643,7 +643,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DevilMayCry3_Thumb {
+        public static System.Drawing.Bitmap DevilMayCry3_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DevilMayCry3_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -653,7 +653,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DevilMayCry4_Thumb {
+        public static System.Drawing.Bitmap DevilMayCry4_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DevilMayCry4_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -663,7 +663,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DevilMayCry5_Thumb {
+        public static System.Drawing.Bitmap DevilMayCry5_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DevilMayCry5_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -673,7 +673,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DiRT2_Thumb {
+        public static System.Drawing.Bitmap DiRT2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DiRT2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -683,7 +683,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DiRT3_Thumb {
+        public static System.Drawing.Bitmap DiRT3_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DiRT3_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -693,7 +693,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DiRTShowdown_Thumb {
+        public static System.Drawing.Bitmap DiRTShowdown_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DiRTShowdown_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -703,7 +703,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DownArrow {
+        public static System.Drawing.Bitmap DownArrow {
             get {
                 object obj = ResourceManager.GetObject("DownArrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -713,7 +713,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DragonBallXenoVerse_Thumb {
+        public static System.Drawing.Bitmap DragonBallXenoVerse_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DragonBallXenoVerse_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -723,7 +723,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DragonsDogma_Thumb {
+        public static System.Drawing.Bitmap DragonsDogma_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DragonsDogma_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -733,7 +733,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DS_Thumb {
+        public static System.Drawing.Bitmap DS_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DS_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -743,7 +743,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DS2_Thumb {
+        public static System.Drawing.Bitmap DS2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DS2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -753,7 +753,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DS3_Thumb {
+        public static System.Drawing.Bitmap DS3_Thumb {
             get {
                 object obj = ResourceManager.GetObject("DS3_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -763,7 +763,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap EarnedAchievement {
+        public static System.Drawing.Bitmap EarnedAchievement {
             get {
                 object obj = ResourceManager.GetObject("EarnedAchievement", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -773,7 +773,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap EarnedAvatarAward {
+        public static System.Drawing.Bitmap EarnedAvatarAward {
             get {
                 object obj = ResourceManager.GetObject("EarnedAvatarAward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -783,7 +783,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Enslaved_Odyssey_Thumb {
+        public static System.Drawing.Bitmap Enslaved_Odyssey_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Enslaved_Odyssey_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -793,7 +793,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Fable2_Thumb_New {
+        public static System.Drawing.Bitmap Fable2_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("Fable2_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -803,7 +803,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FarCry3_Thumb {
+        public static System.Drawing.Bitmap FarCry3_Thumb {
             get {
                 object obj = ResourceManager.GetObject("FarCry3_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -813,7 +813,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FarCry3BloodDragon_Thumb {
+        public static System.Drawing.Bitmap FarCry3BloodDragon_Thumb {
             get {
                 object obj = ResourceManager.GetObject("FarCry3BloodDragon_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -823,7 +823,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FarCry4_Thumb {
+        public static System.Drawing.Bitmap FarCry4_Thumb {
             get {
                 object obj = ResourceManager.GetObject("FarCry4_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -833,7 +833,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FatxHDD_24 {
+        public static System.Drawing.Bitmap FatxHDD_24 {
             get {
                 object obj = ResourceManager.GetObject("FatxHDD_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -843,7 +843,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FatxMU_24 {
+        public static System.Drawing.Bitmap FatxMU_24 {
             get {
                 object obj = ResourceManager.GetObject("FatxMU_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -853,7 +853,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FatxUSB_24 {
+        public static System.Drawing.Bitmap FatxUSB_24 {
             get {
                 object obj = ResourceManager.GetObject("FatxUSB_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -863,7 +863,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FEAR_2_Thumb {
+        public static System.Drawing.Bitmap FEAR_2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("FEAR_2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -873,7 +873,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FEAR_Thumb {
+        public static System.Drawing.Bitmap FEAR_Thumb {
             get {
                 object obj = ResourceManager.GetObject("FEAR_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -883,7 +883,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FIFA11_Thumb {
+        public static System.Drawing.Bitmap FIFA11_Thumb {
             get {
                 object obj = ResourceManager.GetObject("FIFA11_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -893,7 +893,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FIFA12_Thumb {
+        public static System.Drawing.Bitmap FIFA12_Thumb {
             get {
                 object obj = ResourceManager.GetObject("FIFA12_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -903,7 +903,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FIFA13_Thumb {
+        public static System.Drawing.Bitmap FIFA13_Thumb {
             get {
                 object obj = ResourceManager.GetObject("FIFA13_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -913,7 +913,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FIFA14_Thumb {
+        public static System.Drawing.Bitmap FIFA14_Thumb {
             get {
                 object obj = ResourceManager.GetObject("FIFA14_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -923,7 +923,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FIFA15_Thumb {
+        public static System.Drawing.Bitmap FIFA15_Thumb {
             get {
                 object obj = ResourceManager.GetObject("FIFA15_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -933,7 +933,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FileIcon {
+        public static System.Drawing.Bitmap FileIcon {
             get {
                 object obj = ResourceManager.GetObject("FileIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -943,7 +943,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FindTID_Thumb {
+        public static System.Drawing.Bitmap FindTID_Thumb {
             get {
                 object obj = ResourceManager.GetObject("FindTID_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -953,7 +953,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Flame {
+        public static System.Drawing.Bitmap Flame {
             get {
                 object obj = ResourceManager.GetObject("Flame", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -963,7 +963,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Flame_Small {
+        public static System.Drawing.Bitmap Flame_Small {
             get {
                 object obj = ResourceManager.GetObject("Flame_Small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -973,7 +973,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FolderClosed {
+        public static System.Drawing.Bitmap FolderClosed {
             get {
                 object obj = ResourceManager.GetObject("FolderClosed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -983,7 +983,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FolderOpen {
+        public static System.Drawing.Bitmap FolderOpen {
             get {
                 object obj = ResourceManager.GetObject("FolderOpen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -993,7 +993,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Forza3_SS_Thumb_New {
+        public static System.Drawing.Bitmap Forza3_SS_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("Forza3_SS_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1003,7 +1003,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Forza3_Thumb_New {
+        public static System.Drawing.Bitmap Forza3_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("Forza3_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1013,7 +1013,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Forza4_Livery_Thumb_New {
+        public static System.Drawing.Bitmap Forza4_Livery_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("Forza4_Livery_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1023,7 +1023,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Forza4_SS_Thumb_New {
+        public static System.Drawing.Bitmap Forza4_SS_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("Forza4_SS_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1033,7 +1033,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Forza4_Thumb_New {
+        public static System.Drawing.Bitmap Forza4_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("Forza4_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1043,7 +1043,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ForzaHorizon_Livery_Thumb_New {
+        public static System.Drawing.Bitmap ForzaHorizon_Livery_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("ForzaHorizon_Livery_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1053,7 +1053,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ForzaHorizon_SS_Thumb_New {
+        public static System.Drawing.Bitmap ForzaHorizon_SS_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("ForzaHorizon_SS_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1063,7 +1063,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ForzaHorizon_Thumb_New {
+        public static System.Drawing.Bitmap ForzaHorizon_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("ForzaHorizon_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1073,7 +1073,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ForzaHorizon2_FnF_Thumb {
+        public static System.Drawing.Bitmap ForzaHorizon2_FnF_Thumb {
             get {
                 object obj = ResourceManager.GetObject("ForzaHorizon2_FnF_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1083,7 +1083,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ForzaHorizon2_Thumb_New {
+        public static System.Drawing.Bitmap ForzaHorizon2_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("ForzaHorizon2_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1093,7 +1093,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GamercardViewer_Thumb {
+        public static System.Drawing.Bitmap GamercardViewer_Thumb {
             get {
                 object obj = ResourceManager.GetObject("GamercardViewer_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1103,7 +1103,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GamerPictureManager_Thumb {
+        public static System.Drawing.Bitmap GamerPictureManager_Thumb {
             get {
                 object obj = ResourceManager.GetObject("GamerPictureManager_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1113,7 +1113,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gamerscore {
+        public static System.Drawing.Bitmap Gamerscore {
             get {
                 object obj = ResourceManager.GetObject("Gamerscore", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1123,7 +1123,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gear {
+        public static System.Drawing.Bitmap Gear {
             get {
                 object obj = ResourceManager.GetObject("Gear", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1133,7 +1133,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GoW_Thumb_New {
+        public static System.Drawing.Bitmap GoW_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("GoW_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1143,7 +1143,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GoW2_Thumb_New {
+        public static System.Drawing.Bitmap GoW2_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("GoW2_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1153,7 +1153,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GoW3_Profile_Thumb_New {
+        public static System.Drawing.Bitmap GoW3_Profile_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("GoW3_Profile_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1163,7 +1163,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GoW3_Stats_Thumb_New {
+        public static System.Drawing.Bitmap GoW3_Stats_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("GoW3_Stats_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1173,7 +1173,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GoW3_Thumb_New {
+        public static System.Drawing.Bitmap GoW3_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("GoW3_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1183,7 +1183,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GoWJ_Stats_Thumb_New {
+        public static System.Drawing.Bitmap GoWJ_Stats_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("GoWJ_Stats_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1193,7 +1193,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GoWJ_Thumb_New {
+        public static System.Drawing.Bitmap GoWJ_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("GoWJ_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1203,7 +1203,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GrayDot {
+        public static System.Drawing.Bitmap GrayDot {
             get {
                 object obj = ResourceManager.GetObject("GrayDot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1213,7 +1213,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GreenDot {
+        public static System.Drawing.Bitmap GreenDot {
             get {
                 object obj = ResourceManager.GetObject("GreenDot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1223,7 +1223,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_AA12 {
+        public static System.Drawing.Bitmap GTA4_AA12 {
             get {
                 object obj = ResourceManager.GetObject("GTA4_AA12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1233,7 +1233,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Advanced_MG {
+        public static System.Drawing.Bitmap GTA4_Advanced_MG {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Advanced_MG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1243,7 +1243,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_AdvancedSniper {
+        public static System.Drawing.Bitmap GTA4_AdvancedSniper {
             get {
                 object obj = ResourceManager.GetObject("GTA4_AdvancedSniper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1253,7 +1253,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_AK47 {
+        public static System.Drawing.Bitmap GTA4_AK47 {
             get {
                 object obj = ResourceManager.GetObject("GTA4_AK47", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1263,7 +1263,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Assault_Shotgun {
+        public static System.Drawing.Bitmap GTA4_Assault_Shotgun {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Assault_Shotgun", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1273,7 +1273,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Automatic_9mm {
+        public static System.Drawing.Bitmap GTA4_Automatic_9mm {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Automatic_9mm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1283,7 +1283,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_BaseballBat {
+        public static System.Drawing.Bitmap GTA4_BaseballBat {
             get {
                 object obj = ResourceManager.GetObject("GTA4_BaseballBat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1293,7 +1293,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_CombatShotgun {
+        public static System.Drawing.Bitmap GTA4_CombatShotgun {
             get {
                 object obj = ResourceManager.GetObject("GTA4_CombatShotgun", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1303,7 +1303,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_CombatSniper {
+        public static System.Drawing.Bitmap GTA4_CombatSniper {
             get {
                 object obj = ResourceManager.GetObject("GTA4_CombatSniper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1313,7 +1313,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_DesertEagle {
+        public static System.Drawing.Bitmap GTA4_DesertEagle {
             get {
                 object obj = ResourceManager.GetObject("GTA4_DesertEagle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1323,7 +1323,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Fist {
+        public static System.Drawing.Bitmap GTA4_Fist {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Fist", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1333,7 +1333,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Glock {
+        public static System.Drawing.Bitmap GTA4_Glock {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Glock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1343,7 +1343,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_GoldUzi {
+        public static System.Drawing.Bitmap GTA4_GoldUzi {
             get {
                 object obj = ResourceManager.GetObject("GTA4_GoldUzi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1353,7 +1353,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Grenade {
+        public static System.Drawing.Bitmap GTA4_Grenade {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Grenade", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1363,7 +1363,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Grenade_Launcher {
+        public static System.Drawing.Bitmap GTA4_Grenade_Launcher {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Grenade_Launcher", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1373,7 +1373,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Knife {
+        public static System.Drawing.Bitmap GTA4_Knife {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Knife", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1383,7 +1383,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_M4Carbine {
+        public static System.Drawing.Bitmap GTA4_M4Carbine {
             get {
                 object obj = ResourceManager.GetObject("GTA4_M4Carbine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1393,7 +1393,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_MicroUZI {
+        public static System.Drawing.Bitmap GTA4_MicroUZI {
             get {
                 object obj = ResourceManager.GetObject("GTA4_MicroUZI", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1403,7 +1403,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Molotov {
+        public static System.Drawing.Bitmap GTA4_Molotov {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Molotov", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1413,7 +1413,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_MP5 {
+        public static System.Drawing.Bitmap GTA4_MP5 {
             get {
                 object obj = ResourceManager.GetObject("GTA4_MP5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1423,7 +1423,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_P90 {
+        public static System.Drawing.Bitmap GTA4_P90 {
             get {
                 object obj = ResourceManager.GetObject("GTA4_P90", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1433,7 +1433,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Pipe_Bomb {
+        public static System.Drawing.Bitmap GTA4_Pipe_Bomb {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Pipe_Bomb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1443,7 +1443,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Pistol44 {
+        public static System.Drawing.Bitmap GTA4_Pistol44 {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Pistol44", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1453,7 +1453,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Pool_Cue {
+        public static System.Drawing.Bitmap GTA4_Pool_Cue {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Pool_Cue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1463,7 +1463,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_PumpShotgun {
+        public static System.Drawing.Bitmap GTA4_PumpShotgun {
             get {
                 object obj = ResourceManager.GetObject("GTA4_PumpShotgun", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1473,7 +1473,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_RPG {
+        public static System.Drawing.Bitmap GTA4_RPG {
             get {
                 object obj = ResourceManager.GetObject("GTA4_RPG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1483,7 +1483,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_Sawed_Off_Shotgun {
+        public static System.Drawing.Bitmap GTA4_Sawed_Off_Shotgun {
             get {
                 object obj = ResourceManager.GetObject("GTA4_Sawed_Off_Shotgun", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1493,7 +1493,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_SniperRifle {
+        public static System.Drawing.Bitmap GTA4_SniperRifle {
             get {
                 object obj = ResourceManager.GetObject("GTA4_SniperRifle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1503,7 +1503,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTA4_StickyBomb {
+        public static System.Drawing.Bitmap GTA4_StickyBomb {
             get {
                 object obj = ResourceManager.GetObject("GTA4_StickyBomb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1513,7 +1513,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTAIV_Thumb {
+        public static System.Drawing.Bitmap GTAIV_Thumb {
             get {
                 object obj = ResourceManager.GetObject("GTAIV_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1523,7 +1523,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GTAV_Thumb {
+        public static System.Drawing.Bitmap GTAV_Thumb {
             get {
                 object obj = ResourceManager.GetObject("GTAV_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1533,7 +1533,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo3_Thumb_New {
+        public static System.Drawing.Bitmap Halo3_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("Halo3_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1543,7 +1543,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo3ODST_Thumb_New {
+        public static System.Drawing.Bitmap Halo3ODST_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("Halo3ODST_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1553,7 +1553,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_0 {
+        public static System.Drawing.Bitmap Halo4_0 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1563,7 +1563,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_1 {
+        public static System.Drawing.Bitmap Halo4_1 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1573,7 +1573,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_10 {
+        public static System.Drawing.Bitmap Halo4_10 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1583,7 +1583,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_11 {
+        public static System.Drawing.Bitmap Halo4_11 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1593,7 +1593,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_12 {
+        public static System.Drawing.Bitmap Halo4_12 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1603,7 +1603,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_13 {
+        public static System.Drawing.Bitmap Halo4_13 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_13", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1613,7 +1613,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_14 {
+        public static System.Drawing.Bitmap Halo4_14 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_14", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1623,7 +1623,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_2 {
+        public static System.Drawing.Bitmap Halo4_2 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1633,7 +1633,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_3 {
+        public static System.Drawing.Bitmap Halo4_3 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1643,7 +1643,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_4 {
+        public static System.Drawing.Bitmap Halo4_4 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1653,7 +1653,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_5 {
+        public static System.Drawing.Bitmap Halo4_5 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1663,7 +1663,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_6 {
+        public static System.Drawing.Bitmap Halo4_6 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1673,7 +1673,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_7 {
+        public static System.Drawing.Bitmap Halo4_7 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1683,7 +1683,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_8 {
+        public static System.Drawing.Bitmap Halo4_8 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1693,7 +1693,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_9 {
+        public static System.Drawing.Bitmap Halo4_9 {
             get {
                 object obj = ResourceManager.GetObject("Halo4_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1703,7 +1703,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_Megalo_Thumb_New {
+        public static System.Drawing.Bitmap Halo4_Megalo_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("Halo4_Megalo_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1713,7 +1713,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Halo4_Thumb_New {
+        public static System.Drawing.Bitmap Halo4_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("Halo4_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1723,7 +1723,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HaloReach_Megalo_Thumb_New {
+        public static System.Drawing.Bitmap HaloReach_Megalo_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("HaloReach_Megalo_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1733,7 +1733,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HaloReach_Thumb_New {
+        public static System.Drawing.Bitmap HaloReach_Thumb_New {
             get {
                 object obj = ResourceManager.GetObject("HaloReach_Thumb_New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1743,7 +1743,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Heart {
+        public static System.Drawing.Bitmap Heart {
             get {
                 object obj = ResourceManager.GetObject("Heart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1753,7 +1753,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Info {
+        public static System.Drawing.Bitmap Info {
             get {
                 object obj = ResourceManager.GetObject("Info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1763,7 +1763,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap InjusticeGAU_Thumb {
+        public static System.Drawing.Bitmap InjusticeGAU_Thumb {
             get {
                 object obj = ResourceManager.GetObject("InjusticeGAU_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1773,7 +1773,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Just_Cause_Thumb {
+        public static System.Drawing.Bitmap Just_Cause_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Just_Cause_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1783,7 +1783,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap L4D2_Thumb {
+        public static System.Drawing.Bitmap L4D2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("L4D2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1793,7 +1793,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Left4Dead {
+        public static System.Drawing.Bitmap Left4Dead {
             get {
                 object obj = ResourceManager.GetObject("Left4Dead", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1803,7 +1803,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Left4Dead2 {
+        public static System.Drawing.Bitmap Left4Dead2 {
             get {
                 object obj = ResourceManager.GetObject("Left4Dead2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1813,7 +1813,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LeftArrow {
+        public static System.Drawing.Bitmap LeftArrow {
             get {
                 object obj = ResourceManager.GetObject("LeftArrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1823,7 +1823,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LIMBO_Thumb {
+        public static System.Drawing.Bitmap LIMBO_Thumb {
             get {
                 object obj = ResourceManager.GetObject("LIMBO_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1833,7 +1833,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LoadingLogo {
+        public static System.Drawing.Bitmap LoadingLogo {
             get {
                 object obj = ResourceManager.GetObject("LoadingLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1843,7 +1843,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Lock {
+        public static System.Drawing.Bitmap Lock {
             get {
                 object obj = ResourceManager.GetObject("Lock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1853,7 +1853,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo64 {
+        public static System.Drawing.Bitmap Logo64 {
             get {
                 object obj = ResourceManager.GetObject("Logo64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1863,7 +1863,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LostOdyssey_Thumb {
+        public static System.Drawing.Bitmap LostOdyssey_Thumb {
             get {
                 object obj = ResourceManager.GetObject("LostOdyssey_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1873,7 +1873,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Magnifier {
+        public static System.Drawing.Bitmap Magnifier {
             get {
                 object obj = ResourceManager.GetObject("Magnifier", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1883,7 +1883,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Manager_Thumb {
+        public static System.Drawing.Bitmap Manager_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Manager_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1893,7 +1893,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MarbleBlastUltra_Thumb {
+        public static System.Drawing.Bitmap MarbleBlastUltra_Thumb {
             get {
                 object obj = ResourceManager.GetObject("MarbleBlastUltra_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1903,7 +1903,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MaxPayne3_Thumb {
+        public static System.Drawing.Bitmap MaxPayne3_Thumb {
             get {
                 object obj = ResourceManager.GetObject("MaxPayne3_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1913,7 +1913,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MeatBoy {
+        public static System.Drawing.Bitmap MeatBoy {
             get {
                 object obj = ResourceManager.GetObject("MeatBoy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1923,7 +1923,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Medal_Blue {
+        public static System.Drawing.Bitmap Medal_Blue {
             get {
                 object obj = ResourceManager.GetObject("Medal_Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1933,7 +1933,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MercuryHg_Thumb {
+        public static System.Drawing.Bitmap MercuryHg_Thumb {
             get {
                 object obj = ResourceManager.GetObject("MercuryHg_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1943,7 +1943,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Metro_2033_Thumb {
+        public static System.Drawing.Bitmap Metro_2033_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Metro_2033_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1953,7 +1953,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Milestone1 {
+        public static System.Drawing.Bitmap Milestone1 {
             get {
                 object obj = ResourceManager.GetObject("Milestone1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1963,7 +1963,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Minus {
+        public static System.Drawing.Bitmap Minus {
             get {
                 object obj = ResourceManager.GetObject("Minus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1973,7 +1973,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MLB_2k13_Thumb {
+        public static System.Drawing.Bitmap MLB_2k13_Thumb {
             get {
                 object obj = ResourceManager.GetObject("MLB_2k13_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1983,7 +1983,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MoH_Thumb {
+        public static System.Drawing.Bitmap MoH_Thumb {
             get {
                 object obj = ResourceManager.GetObject("MoH_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -1993,7 +1993,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MotocrossMadness_Thumb {
+        public static System.Drawing.Bitmap MotocrossMadness_Thumb {
             get {
                 object obj = ResourceManager.GetObject("MotocrossMadness_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2003,7 +2003,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MW3_Thumb {
+        public static System.Drawing.Bitmap MW3_Thumb {
             get {
                 object obj = ResourceManager.GetObject("MW3_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2013,7 +2013,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NarutoStorm2_Thumb {
+        public static System.Drawing.Bitmap NarutoStorm2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("NarutoStorm2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2023,7 +2023,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NarutoStorm3_Thumb {
+        public static System.Drawing.Bitmap NarutoStorm3_Thumb {
             get {
                 object obj = ResourceManager.GetObject("NarutoStorm3_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2033,7 +2033,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NaughtyBear_Thumb {
+        public static System.Drawing.Bitmap NaughtyBear_Thumb {
             get {
                 object obj = ResourceManager.GetObject("NaughtyBear_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2043,7 +2043,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NBA_2K13Thumb {
+        public static System.Drawing.Bitmap NBA_2K13Thumb {
             get {
                 object obj = ResourceManager.GetObject("NBA_2K13Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2053,7 +2053,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NBA_2K14Thumb {
+        public static System.Drawing.Bitmap NBA_2K14Thumb {
             get {
                 object obj = ResourceManager.GetObject("NBA_2K14Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2063,7 +2063,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NBA_2K15_Thumb {
+        public static System.Drawing.Bitmap NBA_2K15_Thumb {
             get {
                 object obj = ResourceManager.GetObject("NBA_2K15_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2073,7 +2073,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NeedForSpeedHP_Thumb {
+        public static System.Drawing.Bitmap NeedForSpeedHP_Thumb {
             get {
                 object obj = ResourceManager.GetObject("NeedForSpeedHP_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2083,7 +2083,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap New {
+        public static System.Drawing.Bitmap New {
             get {
                 object obj = ResourceManager.GetObject("New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2093,7 +2093,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NPlus_Thumb {
+        public static System.Drawing.Bitmap NPlus_Thumb {
             get {
                 object obj = ResourceManager.GetObject("NPlus_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2103,7 +2103,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Oblivion_Thumb {
+        public static System.Drawing.Bitmap Oblivion_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Oblivion_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2113,7 +2113,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Page {
+        public static System.Drawing.Bitmap Page {
             get {
                 object obj = ResourceManager.GetObject("Page", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2123,7 +2123,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PageWarning {
+        public static System.Drawing.Bitmap PageWarning {
             get {
                 object obj = ResourceManager.GetObject("PageWarning", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2133,7 +2133,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Partition {
+        public static System.Drawing.Bitmap Partition {
             get {
                 object obj = ResourceManager.GetObject("Partition", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2143,7 +2143,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pencil {
+        public static System.Drawing.Bitmap Pencil {
             get {
                 object obj = ResourceManager.GetObject("Pencil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2153,7 +2153,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PGR4_Thumb {
+        public static System.Drawing.Bitmap PGR4_Thumb {
             get {
                 object obj = ResourceManager.GetObject("PGR4_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2163,7 +2163,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PlantsVsZombies_Thumb {
+        public static System.Drawing.Bitmap PlantsVsZombies_Thumb {
             get {
                 object obj = ResourceManager.GetObject("PlantsVsZombies_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2173,7 +2173,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Plus {
+        public static System.Drawing.Bitmap Plus {
             get {
                 object obj = ResourceManager.GetObject("Plus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2183,7 +2183,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Profile_Thumb {
+        public static System.Drawing.Bitmap Profile_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Profile_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2193,7 +2193,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ProfileEditor_Thumb {
+        public static System.Drawing.Bitmap ProfileEditor_Thumb {
             get {
                 object obj = ResourceManager.GetObject("ProfileEditor_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2203,7 +2203,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Prototype_Thumb {
+        public static System.Drawing.Bitmap Prototype_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Prototype_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2213,7 +2213,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap QuakeArenaArcade_Thumb {
+        public static System.Drawing.Bitmap QuakeArenaArcade_Thumb {
             get {
                 object obj = ResourceManager.GetObject("QuakeArenaArcade_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2223,7 +2223,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Question {
+        public static System.Drawing.Bitmap Question {
             get {
                 object obj = ResourceManager.GetObject("Question", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2233,7 +2233,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap QuestionMark {
+        public static System.Drawing.Bitmap QuestionMark {
             get {
                 object obj = ResourceManager.GetObject("QuestionMark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2243,7 +2243,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap QuestionMarkWide {
+        public static System.Drawing.Bitmap QuestionMarkWide {
             get {
                 object obj = ResourceManager.GetObject("QuestionMarkWide", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2253,7 +2253,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RE5_Thumb {
+        public static System.Drawing.Bitmap RE5_Thumb {
             get {
                 object obj = ResourceManager.GetObject("RE5_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2263,7 +2263,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RE6_Thumb {
+        public static System.Drawing.Bitmap RE6_Thumb {
             get {
                 object obj = ResourceManager.GetObject("RE6_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2273,7 +2273,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RedDead_Thumb {
+        public static System.Drawing.Bitmap RedDead_Thumb {
             get {
                 object obj = ResourceManager.GetObject("RedDead_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2283,7 +2283,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RedDot {
+        public static System.Drawing.Bitmap RedDot {
             get {
                 object obj = ResourceManager.GetObject("RedDot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2293,7 +2293,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RedFaction_Thumb {
+        public static System.Drawing.Bitmap RedFaction_Thumb {
             get {
                 object obj = ResourceManager.GetObject("RedFaction_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2303,7 +2303,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RedFlag {
+        public static System.Drawing.Bitmap RedFlag {
             get {
                 object obj = ResourceManager.GetObject("RedFlag", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2313,7 +2313,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Refresh {
+        public static System.Drawing.Bitmap Refresh {
             get {
                 object obj = ResourceManager.GetObject("Refresh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2323,7 +2323,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap REORC_Thumb {
+        public static System.Drawing.Bitmap REORC_Thumb {
             get {
                 object obj = ResourceManager.GetObject("REORC_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2333,7 +2333,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ResidentEvil {
+        public static System.Drawing.Bitmap ResidentEvil {
             get {
                 object obj = ResourceManager.GetObject("ResidentEvil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2343,7 +2343,17 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RightArrow {
+        public static System.Drawing.Bitmap riggyDev {
+            get {
+                object obj = ResourceManager.GetObject("riggyDev", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap RightArrow {
             get {
                 object obj = ResourceManager.GetObject("RightArrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2353,7 +2363,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Saboteur_Thumb {
+        public static System.Drawing.Bitmap Saboteur_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Saboteur_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2363,7 +2373,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SaintsRow3_Thumb {
+        public static System.Drawing.Bitmap SaintsRow3_Thumb {
             get {
                 object obj = ResourceManager.GetObject("SaintsRow3_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2373,7 +2383,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SaintsRow4_Thumb {
+        public static System.Drawing.Bitmap SaintsRow4_Thumb {
             get {
                 object obj = ResourceManager.GetObject("SaintsRow4_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2383,7 +2393,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SaintsRowGOOH_Thumb {
+        public static System.Drawing.Bitmap SaintsRowGOOH_Thumb {
             get {
                 object obj = ResourceManager.GetObject("SaintsRowGOOH_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2393,7 +2403,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SaveIcon {
+        public static System.Drawing.Bitmap SaveIcon {
             get {
                 object obj = ResourceManager.GetObject("SaveIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2403,7 +2413,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Skyrim_Thumb {
+        public static System.Drawing.Bitmap Skyrim_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Skyrim_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2413,7 +2423,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SleepingDogs_Thumb {
+        public static System.Drawing.Bitmap SleepingDogs_Thumb {
             get {
                 object obj = ResourceManager.GetObject("SleepingDogs_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2423,7 +2433,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SMB_Thumb {
+        public static System.Drawing.Bitmap SMB_Thumb {
             get {
                 object obj = ResourceManager.GetObject("SMB_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2433,7 +2443,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Smile {
+        public static System.Drawing.Bitmap Smile {
             get {
                 object obj = ResourceManager.GetObject("Smile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2443,7 +2453,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sonic_Thumb {
+        public static System.Drawing.Bitmap Sonic_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Sonic_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2453,7 +2463,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SSXTricky_Thumb {
+        public static System.Drawing.Bitmap SSXTricky_Thumb {
             get {
                 object obj = ResourceManager.GetObject("SSXTricky_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2463,7 +2473,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Star {
+        public static System.Drawing.Bitmap Star {
             get {
                 object obj = ResourceManager.GetObject("Star", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2473,7 +2483,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap StarWarsTFUII_Thumb {
+        public static System.Drawing.Bitmap StarWarsTFUII_Thumb {
             get {
                 object obj = ResourceManager.GetObject("StarWarsTFUII_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2483,7 +2493,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap StateOfDecay_Thumb {
+        public static System.Drawing.Bitmap StateOfDecay_Thumb {
             get {
                 object obj = ResourceManager.GetObject("StateOfDecay_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2493,7 +2503,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Swarm_Thumb {
+        public static System.Drawing.Bitmap Swarm_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Swarm_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2503,7 +2513,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TestDrive_Thumb {
+        public static System.Drawing.Bitmap TestDrive_Thumb {
             get {
                 object obj = ResourceManager.GetObject("TestDrive_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2513,7 +2523,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TestDrive2_Thumb {
+        public static System.Drawing.Bitmap TestDrive2_Thumb {
             get {
                 object obj = ResourceManager.GetObject("TestDrive2_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2523,7 +2533,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Theme_Game {
+        public static System.Drawing.Bitmap Theme_Game {
             get {
                 object obj = ResourceManager.GetObject("Theme_Game", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2533,7 +2543,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Theme_Main {
+        public static System.Drawing.Bitmap Theme_Main {
             get {
                 object obj = ResourceManager.GetObject("Theme_Main", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2543,7 +2553,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Theme_Other {
+        public static System.Drawing.Bitmap Theme_Other {
             get {
                 object obj = ResourceManager.GetObject("Theme_Other", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2553,7 +2563,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Theme_Thumb {
+        public static System.Drawing.Bitmap Theme_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Theme_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2563,7 +2573,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TigerWoods14_Thumb {
+        public static System.Drawing.Bitmap TigerWoods14_Thumb {
             get {
                 object obj = ResourceManager.GetObject("TigerWoods14_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2573,7 +2583,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Tile {
+        public static System.Drawing.Bitmap Tile {
             get {
                 object obj = ResourceManager.GetObject("Tile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2583,7 +2593,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TitleIdFinder_Default {
+        public static System.Drawing.Bitmap TitleIdFinder_Default {
             get {
                 object obj = ResourceManager.GetObject("TitleIdFinder_Default", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2593,7 +2603,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TombRaider_Thumb {
+        public static System.Drawing.Bitmap TombRaider_Thumb {
             get {
                 object obj = ResourceManager.GetObject("TombRaider_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2603,7 +2613,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Transparent_32 {
+        public static System.Drawing.Bitmap Transparent_32 {
             get {
                 object obj = ResourceManager.GetObject("Transparent_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2613,7 +2623,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Trash {
+        public static System.Drawing.Bitmap Trash {
             get {
                 object obj = ResourceManager.GetObject("Trash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2623,7 +2633,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Trophy {
+        public static System.Drawing.Bitmap Trophy {
             get {
                 object obj = ResourceManager.GetObject("Trophy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2633,7 +2643,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Unearned {
+        public static System.Drawing.Bitmap Unearned {
             get {
                 object obj = ResourceManager.GetObject("Unearned", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2643,7 +2653,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Unlocker_Thumb {
+        public static System.Drawing.Bitmap Unlocker_Thumb {
             get {
                 object obj = ResourceManager.GetObject("Unlocker_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2653,7 +2663,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap UpArrow {
+        public static System.Drawing.Bitmap UpArrow {
             get {
                 object obj = ResourceManager.GetObject("UpArrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2663,7 +2673,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap UpArrowSilver {
+        public static System.Drawing.Bitmap UpArrowSilver {
             get {
                 object obj = ResourceManager.GetObject("UpArrowSilver", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2673,7 +2683,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap User {
+        public static System.Drawing.Bitmap User {
             get {
                 object obj = ResourceManager.GetObject("User", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2683,7 +2693,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap UserSingle {
+        public static System.Drawing.Bitmap UserSingle {
             get {
                 object obj = ResourceManager.GetObject("UserSingle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2693,7 +2703,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap VisitUs_Thumb {
+        public static System.Drawing.Bitmap VisitUs_Thumb {
             get {
                 object obj = ResourceManager.GetObject("VisitUs_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2703,7 +2713,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap WarpZone {
+        public static System.Drawing.Bitmap WarpZone {
             get {
                 object obj = ResourceManager.GetObject("WarpZone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2713,7 +2723,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap WatchDogs_Thumb {
+        public static System.Drawing.Bitmap WatchDogs_Thumb {
             get {
                 object obj = ResourceManager.GetObject("WatchDogs_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2723,7 +2733,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap WET_Thumb {
+        public static System.Drawing.Bitmap WET_Thumb {
             get {
                 object obj = ResourceManager.GetObject("WET_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2733,7 +2743,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap YuGiOh_5DS_Thumb {
+        public static System.Drawing.Bitmap YuGiOh_5DS_Thumb {
             get {
                 object obj = ResourceManager.GetObject("YuGiOh_5DS_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -2743,7 +2753,7 @@ namespace Modex360.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap YuGiOh_MD_Thumb {
+        public static System.Drawing.Bitmap YuGiOh_MD_Thumb {
             get {
                 object obj = ResourceManager.GetObject("YuGiOh_MD_Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

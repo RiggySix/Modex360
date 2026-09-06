@@ -43,11 +43,9 @@ namespace Modex360.PackageEditors
             NotAGamesave = { "The selected file is not a gamesave!", "Not a Gamesave" },
             NotAValidGamesave = { "The selected file is not a valid gamesave for this editor!", "Not a Valid Gamesave" },
             NoGPDInProfile = { "You must play this game before modding it!", "Game Never Played" },
-            NoLongerDiamond = { "You are no longer logged in as a Diamond member!", "Not Diamond" },
             FileNotLoaded = { "Open a file first!", "No File Loaded" },
             SavedRehashedResigned = { "Saved, rehashed, and resigned", "Saved" },
             SavedSuccessfully = { "File saved successfully!", "Saved" },
-            StatusChanged = { "Your signin status has changed! Please close and reopen this form.", "Status Changed" },
             OperationExecuting = { "An operation is currently being executed!\n\nWait until that is finished to continue.", "Operation Executing" },
             TellDeveloper = { "\nIf you see a developer, the following message will help him resolve the issue:\n\n" };
         internal protected static readonly string[]

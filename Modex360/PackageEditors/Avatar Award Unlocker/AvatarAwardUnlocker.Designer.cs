@@ -49,15 +49,16 @@
             this.cmdUnlockAllAwards = new DevComponents.DotNetBar.ButtonX();
             this.pTotal = new DevComponents.DotNetBar.Controls.ProgressBarX();
             this.listGames = new System.Windows.Forms.ListView();
-            this.col1 = new System.Windows.Forms.ColumnHeader();
-            this.col2 = new System.Windows.Forms.ColumnHeader();
-            this.col3 = new System.Windows.Forms.ColumnHeader();
+            this.col1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.col2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.col3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.menuExtract = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.extractAwardsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.extractAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listAwards = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.colIcon = new System.Windows.Forms.DataGridViewImageColumn();
             this.colAward = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.menuExtract = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.extractAwardsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pTotalTitle = new DevComponents.DotNetBar.Controls.ProgressBarX();
             this.pbMarketplace = new System.Windows.Forms.PictureBox();
             this.rbPackageEditor.SuspendLayout();
@@ -67,8 +68,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateUnlocked)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGame)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listAwards)).BeginInit();
             this.menuExtract.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listAwards)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMarketplace)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +78,6 @@
             // 
             // 
             // 
-            this.rbPackageEditor.BackgroundStyle.Class = "";
             this.rbPackageEditor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.rbPackageEditor.Controls.Add(this.ribbonPanel1);
             this.rbPackageEditor.Dock = System.Windows.Forms.DockStyle.Top;
@@ -110,21 +110,18 @@
             this.panelMain.Controls.Add(this.pbGame);
             this.panelMain.Controls.Add(this.cmdUnlockAll);
             this.panelMain.Location = new System.Drawing.Point(0, 53);
-            this.panelMain.Size = new System.Drawing.Size(696, 70);
+            this.panelMain.Size = new System.Drawing.Size(696, 69);
             // 
             // 
             // 
-            this.panelMain.Style.Class = "";
             this.panelMain.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.panelMain.StyleMouseDown.Class = "";
             this.panelMain.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.panelMain.StyleMouseOver.Class = "";
             this.panelMain.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.panelMain.Visible = true;
             // 
@@ -149,21 +146,18 @@
             this.ribbonPanel1.Location = new System.Drawing.Point(0, 53);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel1.Size = new System.Drawing.Size(696, 70);
+            this.ribbonPanel1.Size = new System.Drawing.Size(696, 69);
             // 
             // 
             // 
-            this.ribbonPanel1.Style.Class = "";
             this.ribbonPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel1.StyleMouseDown.Class = "";
             this.ribbonPanel1.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel1.StyleMouseOver.Class = "";
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 2;
             this.ribbonPanel1.Visible = false;
@@ -177,7 +171,8 @@
             this.panelAward.Controls.Add(this.dateUnlocked);
             this.panelAward.Controls.Add(this.ckUnlockedOffline);
             this.panelAward.Controls.Add(this.ckUnlockedOnline);
-            this.panelAward.Location = new System.Drawing.Point(448, 1);
+            this.panelAward.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelAward.Location = new System.Drawing.Point(445, 0);
             this.panelAward.Name = "panelAward";
             this.panelAward.Size = new System.Drawing.Size(251, 68);
             this.panelAward.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -215,18 +210,17 @@
             this.dateUnlocked.ButtonDropDown.Visible = true;
             this.dateUnlocked.CustomFormat = "MM/dd/yyyy h:m:s tt";
             this.dateUnlocked.Format = DevComponents.Editors.eDateTimePickerFormat.Custom;
+            this.dateUnlocked.IsPopupCalendarOpen = false;
             this.dateUnlocked.Location = new System.Drawing.Point(5, 45);
             this.dateUnlocked.MaxDate = new System.DateTime(2015, 12, 31, 0, 0, 0, 0);
             this.dateUnlocked.MinDate = new System.DateTime(2005, 9, 1, 0, 0, 0, 0);
             // 
             // 
             // 
-            this.dateUnlocked.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
             // 
             // 
             // 
             this.dateUnlocked.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
-            this.dateUnlocked.MonthCalendar.BackgroundStyle.Class = "";
             this.dateUnlocked.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.dateUnlocked.MonthCalendar.ClearButtonVisible = true;
             // 
@@ -238,21 +232,16 @@
             this.dateUnlocked.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.dateUnlocked.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.dateUnlocked.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.dateUnlocked.MonthCalendar.CommandsBackgroundStyle.Class = "";
             this.dateUnlocked.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.dateUnlocked.MonthCalendar.DisplayMonth = new System.DateTime(2010, 7, 1, 0, 0, 0, 0);
-            this.dateUnlocked.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.dateUnlocked.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
             // 
             // 
             // 
             this.dateUnlocked.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.dateUnlocked.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
             this.dateUnlocked.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.dateUnlocked.MonthCalendar.NavigationBackgroundStyle.Class = "";
             this.dateUnlocked.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.dateUnlocked.MonthCalendar.TodayButtonVisible = true;
-            this.dateUnlocked.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
             this.dateUnlocked.Name = "dateUnlocked";
             this.dateUnlocked.Size = new System.Drawing.Size(239, 20);
             this.dateUnlocked.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -263,7 +252,6 @@
             // 
             // 
             // 
-            this.ckUnlockedOffline.BackgroundStyle.Class = "";
             this.ckUnlockedOffline.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ckUnlockedOffline.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
             this.ckUnlockedOffline.FocusCuesEnabled = false;
@@ -280,7 +268,6 @@
             // 
             // 
             // 
-            this.ckUnlockedOnline.BackgroundStyle.Class = "";
             this.ckUnlockedOnline.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ckUnlockedOnline.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
             this.ckUnlockedOnline.FocusCuesEnabled = false;
@@ -298,7 +285,6 @@
             // 
             // 
             // 
-            this.lblUnlockedDescription.BackgroundStyle.Class = "";
             this.lblUnlockedDescription.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblUnlockedDescription.Location = new System.Drawing.Point(76, 33);
             this.lblUnlockedDescription.Name = "lblUnlockedDescription";
@@ -312,7 +298,6 @@
             // 
             // 
             // 
-            this.lblLockedDescription.BackgroundStyle.Class = "";
             this.lblLockedDescription.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblLockedDescription.Location = new System.Drawing.Point(76, 2);
             this.lblLockedDescription.Name = "lblLockedDescription";
@@ -376,7 +361,6 @@
             // 
             // 
             // 
-            this.pTotal.BackgroundStyle.Class = "";
             this.pTotal.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.pTotal.Location = new System.Drawing.Point(228, 35);
             this.pTotal.Name = "pTotal";
@@ -392,17 +376,42 @@
             this.col1,
             this.col2,
             this.col3});
-            this.listGames.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listGames.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listGames.FullRowSelect = true;
+            this.listGames.HideSelection = false;
             this.listGames.Location = new System.Drawing.Point(5, 126);
             this.listGames.MultiSelect = false;
             this.listGames.Name = "listGames";
-            this.listGames.Size = new System.Drawing.Size(225, 229);
+            this.listGames.Size = new System.Drawing.Size(225, 228);
             this.listGames.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listGames.TabIndex = 6;
             this.listGames.UseCompatibleStateImageBehavior = false;
             this.listGames.View = System.Windows.Forms.View.Tile;
             this.listGames.SelectedIndexChanged += new System.EventHandler(this.listGames_SelectedIndexChanged);
+            // 
+            // menuExtract
+            // 
+            this.menuExtract.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.extractAwardsToolStripMenuItem,
+            this.extractAllToolStripMenuItem});
+            this.menuExtract.Name = "menuExtract";
+            this.menuExtract.Size = new System.Drawing.Size(161, 48);
+            // 
+            // extractAwardsToolStripMenuItem
+            // 
+            this.extractAwardsToolStripMenuItem.Image = global::Modex360.Properties.Resources.SaveIcon;
+            this.extractAwardsToolStripMenuItem.Name = "extractAwardsToolStripMenuItem";
+            this.extractAwardsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.extractAwardsToolStripMenuItem.Text = "Extract Awards...";
+            this.extractAwardsToolStripMenuItem.Click += new System.EventHandler(this.extractAwardsToolStripMenuItem_Click);
+            // 
+            // extractAllToolStripMenuItem
+            // 
+            this.extractAllToolStripMenuItem.Image = global::Modex360.Properties.Resources.Logo64;
+            this.extractAllToolStripMenuItem.Name = "extractAllToolStripMenuItem";
+            this.extractAllToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.extractAllToolStripMenuItem.Text = "Extract All";
+            this.extractAllToolStripMenuItem.Click += new System.EventHandler(this.extractAllToolStripMenuItem_Click);
             // 
             // listAwards
             // 
@@ -469,7 +478,7 @@
             // 
             // colAward
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.colAward.DefaultCellStyle = dataGridViewCellStyle2;
             this.colAward.HeaderText = "Avatar Award";
             this.colAward.Name = "colAward";
@@ -480,27 +489,12 @@
             // colDescription
             // 
             this.colDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.colDescription.DefaultCellStyle = dataGridViewCellStyle3;
             this.colDescription.HeaderText = "Description";
             this.colDescription.Name = "colDescription";
             this.colDescription.ReadOnly = true;
             this.colDescription.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // menuExtract
-            // 
-            this.menuExtract.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.extractAwardsToolStripMenuItem});
-            this.menuExtract.Name = "menuExtract";
-            this.menuExtract.Size = new System.Drawing.Size(161, 26);
-            // 
-            // extractAwardsToolStripMenuItem
-            // 
-            this.extractAwardsToolStripMenuItem.Image = global::Modex360.Properties.Resources.SaveIcon;
-            this.extractAwardsToolStripMenuItem.Name = "extractAwardsToolStripMenuItem";
-            this.extractAwardsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.extractAwardsToolStripMenuItem.Text = "Extract Awards...";
-            this.extractAwardsToolStripMenuItem.Click += new System.EventHandler(this.extractAwardsToolStripMenuItem_Click);
             // 
             // pTotalTitle
             // 
@@ -508,7 +502,6 @@
             // 
             // 
             // 
-            this.pTotalTitle.BackgroundStyle.Class = "";
             this.pTotalTitle.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.pTotalTitle.Location = new System.Drawing.Point(228, 2);
             this.pTotalTitle.Name = "pTotalTitle";
@@ -522,7 +515,7 @@
             this.pbMarketplace.BackColor = System.Drawing.Color.Gainsboro;
             this.pbMarketplace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbMarketplace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbMarketplace.Location = new System.Drawing.Point(5, 354);
+            this.pbMarketplace.Location = new System.Drawing.Point(5, 353);
             this.pbMarketplace.Name = "pbMarketplace";
             this.pbMarketplace.Size = new System.Drawing.Size(225, 129);
             this.pbMarketplace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -531,12 +524,12 @@
             // 
             // AvatarAwardUnlocker
             // 
-            
-            
             this.ClientSize = new System.Drawing.Size(706, 485);
             this.Controls.Add(this.pbMarketplace);
             this.Controls.Add(this.listGames);
             this.Controls.Add(this.listAwards);
+            this.MaximumSize = new System.Drawing.Size(706, 485);
+            this.MinimumSize = new System.Drawing.Size(706, 485);
             this.Name = "AvatarAwardUnlocker";
             this.Text = "Avatar Award Unlocker";
             this.Controls.SetChildIndex(this.rbPackageEditor, 0);
@@ -551,8 +544,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateUnlocked)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGame)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listAwards)).EndInit();
             this.menuExtract.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.listAwards)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMarketplace)).EndInit();
             this.ResumeLayout(false);
 
@@ -586,5 +579,6 @@
         private System.Windows.Forms.ToolStripMenuItem extractAwardsToolStripMenuItem;
         private DevComponents.DotNetBar.Controls.ProgressBarX pTotalTitle;
         private System.Windows.Forms.PictureBox pbMarketplace;
+        private System.Windows.Forms.ToolStripMenuItem extractAllToolStripMenuItem;
     }
 }

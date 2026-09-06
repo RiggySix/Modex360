@@ -1,10 +1,8 @@
+/// Fixed by Riggy \\\
+
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using XboxDataBaseFile;
 using Modex360.Functions;
@@ -35,7 +33,7 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
             tabAward.Visible = false;
             listAwards.Rows.Clear();
             listGames.Items.Clear();
-            currentGame = SettingAsInt(16);
+            currentGame = -1;
             avTracker = null;
             totalPossible = 0;
             TitlePlayedRecords = new List<TitlePlayedRecord>();
@@ -46,30 +44,30 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
         private AvatarAssetTracker avTracker;
         public override bool Entry()
         {
-            tileTotal = SettingAsString(248);
-            totalAll = SettingAsString(219);
-            totalTitle = SettingAsString(63);
-            unlockAllDisplayed = SettingAsString(91);
-            secretAward = SettingAsString(144);
-            bool pecFound = DoesFileExist(SettingAsString(159));
+            tileTotal = "{0}/{1} Awards";
+            totalAll = "{0}/{1} Awards Unlocked";
+            totalTitle = "{0}/{1} Awards for {2}";
+            unlockAllDisplayed = "Unlock All";
+            secretAward = "Hidden Award";
+            bool pecFound = DoesFileExist("PEC");
             if (pecFound)
             {
-                Profile = new ProfileFile(Package, (uint)SettingAsLong(90));
-                PEC = new PEC(Package.StfsContentPackage.GetEndianIO(SettingAsString(159)));
+                Profile = new ProfileFile(Package, (uint)0xfffe07d1);
+                PEC = new PEC(Package.StfsContentPackage.GetEndianIO("PEC"));
                 if (PEC == null)
                 {
-                    UI.messageBox(SettingAsString(81), SettingAsString(126), MessageBoxIcon.Error);
+                    UI.messageBox("Could not find PEC file for this profile!", "Error", MessageBoxIcon.Error);
                     cmdUnlockAll.Enabled = cmdUnlockAllAwards.Enabled = false;
                     return false;
                 }
                 Profile.Read();
-                Text = SettingAsString(59) + (Account == null ? "Unknown" : Account.Info.GamerTag);
+                Text = "Avatar Award Unlocker - " + (Account == null ? "Unknown" : Account.Info.GamerTag);
                 populateTitleRecords();
                 updateAwardProgressText();
             }
             if (TitlePlayedRecords.Count == 0 || !pecFound)
             {
-                UI.messageBox(SettingAsString(81), SettingAsString(126), MessageBoxIcon.Information);
+                UI.messageBox("Could not find PEC file for this profile!", "Error", MessageBoxIcon.Information);
                 cmdUnlockAll.Enabled = cmdUnlockAllAwards.Enabled = false;
             }
             else
@@ -92,8 +90,8 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
                     if (newRec.AllAvatarAwards.Possible != 0)
                     {
                         TitlePlayedRecords.Add(newRec);
-                        totalPossible += TitlePlayedRecords[TitlePlayedRecords.Count + SettingAsInt(16)].AllAvatarAwards.Possible;
-                        listGames.Items.Add(getGameRow(TitlePlayedRecords.Count + SettingAsInt(16)));
+                        totalPossible += TitlePlayedRecords[TitlePlayedRecords.Count + -1].AllAvatarAwards.Possible;
+                        listGames.Items.Add(getGameRow(TitlePlayedRecords.Count + -1));
                     }
                 }
             }
@@ -106,9 +104,9 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
             isBusy = true;
             listGames.Items.Clear();
             listGames.BeginUpdate();
-            listGames.TileSize = new Size(SettingAsInt(134), SettingAsInt(246));
+            listGames.TileSize = new Size(200, 66);
             listGames.LargeImageList = new ImageList();
-            listGames.LargeImageList.ImageSize = new Size(SettingAsInt(211), SettingAsInt(211));
+            listGames.LargeImageList.ImageSize = new Size(64, 64);
             listGames.LargeImageList.ColorDepth = ColorDepth.Depth32Bit;
         }
 
@@ -145,7 +143,7 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
                         dataFile.ReadRecord(new DataFileId()
                         {
                             Namespace = Namespace.IMAGES,
-                            Id = (ulong)SettingAsLong(82)
+                            Id = (ulong)0x8000
                         })));
             }
             catch { return Resources.QuestionMark; }
@@ -195,7 +193,7 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
                 tabMain.Select();
                 rbPackageEditor.Refresh();
                 populateAwardList();
-                if (listAwards.Rows.Count > SettingAsInt(74))
+                if (listAwards.Rows.Count > 0)
                     loadAwardRow(0);
                 isBusy = false;
                 tabMain.Select();
@@ -234,15 +232,15 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
                 + Environment.NewLine
                 + "Gender: " + avTracker.Awards[x].BodyType.ToString()
                 + Environment.NewLine
-                + (avTracker.Awards[x].AssetCollected ? (SettingAsString(57)
-                + (avTracker.Awards[x].AssetCollectedOnline ? SettingAsString(197) : SettingAsString(70))) : SettingAsString(188));
+                + (avTracker.Awards[x].AssetCollected ? ("Unlocked"
+                + (avTracker.Awards[x].AssetCollectedOnline ? " Online" : " Offline")) : "Locked");
             if (avTracker.Awards[x].AssetCollected)
                 Av.Cells[2].Value = avTracker.Awards[x].Description;
             else
                 if (avTracker.Awards[x].AssetShowUnawarded)
-                    Av.Cells[2].Value = avTracker.Awards[x].UnawardedText;
-                else
-                    Av.Cells[2].Value = secretAward;
+                Av.Cells[2].Value = avTracker.Awards[x].UnawardedText;
+            else
+                Av.Cells[2].Value = secretAward;
             Av.Cells[2].Value = ((string)Av.Cells[2].Value).Replace(Environment.NewLine, " ");
             return Av;
         }
@@ -253,13 +251,13 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
             currentAward = (int)listAwards.Rows[row].Tag;
             DataGridViewRow Row = getAwardRow(currentAward);
             pbAward.Image = (Image)(listAwards.Rows[row].Cells[0].Value = Row.Cells[0].Value);
-            pbMarketplace.ImageLocation = Server.GameAdder.getAssetImageURL(avTracker.Awards[currentAward].id, SettingAsInt(27));
+            pbMarketplace.ImageLocation = Server.GameAdder.getAssetImageURL(avTracker.Awards[currentAward].id, 128);
             listAwards.Rows[row].Cells[1].Value = Row.Cells[1].Value;
             listAwards.Rows[row].Cells[2].Value = Row.Cells[2].Value;
-            lblLockedDescription.Text = "<b>" + SettingAsString(142) + ":</b> "
+            lblLockedDescription.Text = "<b>" + "Locked Description" + ":</b> "
                 + (avTracker.Awards[currentAward].AssetShowUnawarded ? avTracker.Awards[currentAward].UnawardedText : secretAward);
-            lblUnlockedDescription.Text = "<b>" + SettingAsString(133) + ":</b> " + avTracker.Awards[currentAward].Description;
-            dateUnlocked.Enabled = ckUnlockedOffline.Checked = ckUnlockedOnline.Checked = SettingAsBool(218);
+            lblUnlockedDescription.Text = "<b>" + "Unlocked Description" + ":</b> " + avTracker.Awards[currentAward].Description;
+            dateUnlocked.Enabled = ckUnlockedOffline.Checked = ckUnlockedOnline.Checked = false;
             if (avTracker.Awards[currentAward].AssetCollectedOnline)
                 ckUnlockedOnline.Checked = true;
             else if (avTracker.Awards[currentAward].AssetCollected)
@@ -330,13 +328,13 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
         {
             if (listAwards.SelectedRows.Count > 1)
                 for (int x = 0; x < listAwards.SelectedRows.Count; x++)
-                    unlockAward(listAwards.SelectedRows[x].Index, SettingAsBool(218));
+                    unlockAward(listAwards.SelectedRows[x].Index, false);
             else
                 for (int x = 0; x < listAwards.Rows.Count; x++)
                 {
                     if (cancelUnlock)
                         break;
-                    unlockAward(x, SettingAsBool(218));
+                    unlockAward(x, false);
                 }
         }
 
@@ -346,7 +344,7 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
             {
                 if (listAwards.SelectedRows.Count > 1)
                 {
-                    cmdUnlockAll.Text = SettingAsString(216);
+                    cmdUnlockAll.Text = "Unlock Selected";
                     tabMain.Select();
                 }
                 else
@@ -377,7 +375,7 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
         {
             if (cmdUnlockAllAwards.Text.Length == cancel.Length)
                 cancelUnlock = true;
-            else if (TitlePlayedRecords.Count > 0 && UI.messageBox(SettingAsString(84), SettingAsString(178),
+            else if (TitlePlayedRecords.Count > 0 && UI.messageBox("Unlock all avatar awards for every game?", "Unlock All Avatar Awards",
                 MessageBoxIcon.Question, MessageBoxButtons.YesNoCancel, MessageBoxDefaultButton.Button3) == DialogResult.Yes)
             {
                 if (Meta.IsFatx && FormHandle.isDeviceWorkerThreadRunning(Meta.DeviceIndex))
@@ -416,7 +414,7 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
                         if (listAwards.Rows.Count != 0)
                             loadAwardRow(0);
                         if (!errorThrown && !cancelUnlock)
-                            UI.messageBox(SettingAsString(235), SettingAsString(163), MessageBoxIcon.Information);
+                            UI.messageBox("Avatar awards unlocked successfully!", "Complete", MessageBoxIcon.Information);
                         cancelUnlock = false;
                         cmdUnlockAllAwards.Text = "Unlock All Awards";
                         enableControls(true);
@@ -435,6 +433,23 @@ namespace Modex360.PackageEditors.Avatar_Award_Unlocker
                 sfd.Filter = "GPD|*.gpd";
                 if (sfd.ShowDialog() == DialogResult.OK)
                     File.WriteAllBytes(sfd.FileName, PEC.StfsPec.ExtractFileToArray(ProfileFile.FormatTitleIDToFilename(TitlePlayedRecords[cG].TitleId)));
+            }
+        }
+
+        private void extractAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            if (fbd.ShowDialog() == DialogResult.OK)
+            {
+                int extracted = 0;
+                foreach (TitlePlayedRecord title in TitlePlayedRecords)
+                {
+                    string filename = ProfileFile.FormatTitleIDToFilename(title.TitleId);
+                    string path = Path.Combine(fbd.SelectedPath, filename);
+                    File.WriteAllBytes(path, PEC.StfsPec.ExtractFileToArray(filename));
+                    extracted++;
+                }
+                UI.messageBox(this, extracted.ToString() + " GPD(s) extracted successfully by Riggy!", "Extracted", MessageBoxIcon.Information);
             }
         }
     }

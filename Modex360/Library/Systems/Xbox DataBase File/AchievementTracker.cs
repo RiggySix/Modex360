@@ -100,7 +100,7 @@ namespace XboxDataBaseFile
                 }
             }
         }
-        public AchievementRecord() 
+        public AchievementRecord()
         {
             cb = 0x1c;
             dateTimeAchieved = DateTime.FromFileTime(0);
@@ -169,19 +169,16 @@ namespace XboxDataBaseFile
         }
         public Image GetAchievementTile(AchievementRecord Achiev) // retrieve the achievement's picture
         {
-            if (Achiev.AchievementEarned)
+            DataFileEntry ent = this.DataFile.FindEntry(new DataFileId()
             {
-                DataFileEntry ent = this.DataFile.FindEntry(new DataFileId()
-                {
-                    Namespace = Namespace.IMAGES,
-                    Id = Achiev.imageId
-                });
-                if (ent != null)
-                {
-                    return Image.FromStream(new MemoryStream(this.DataFile.Read(ent)));
-                }
+                Namespace = Namespace.IMAGES,
+                Id = Achiev.imageId
+            });
+            if (ent != null)
+            {
+                return Image.FromStream(new MemoryStream(this.DataFile.Read(ent)));
             }
-            return null;            
+            return null;
         }
 
         public bool IsTitleWriteable()
@@ -206,7 +203,7 @@ namespace XboxDataBaseFile
                 return false;
             }
 
-            return true;            
+            return true;
         }
         public void AddAchievement(AchievementRecord Achievement, object Id)
         {
@@ -216,7 +213,7 @@ namespace XboxDataBaseFile
                 Id = Convert.ToUInt64(Id)
             }, Achievement.ToArray());
         }
- 
+
         public void UnlockAchievement(AchievementRecord Achievement, bool EarnedOnline) // properly unlock an achievement 
         {
             UnlockAchievement(Achievement, EarnedOnline, DateTime.Now);
@@ -232,6 +229,7 @@ namespace XboxDataBaseFile
             }
 
             Achievement.AchievementEarned = true;
+            this.TitleRecord.SetTitleListRecordInfo(0x1 | 0x2);
 
             if (this.TitleRecord.CredEarned + Achievement.cred <= this.TitleRecord.CredPossible
             && this.TitleRecord.AchievementsEarned + 1 <= this.TitleRecord.AchievementsPossible)

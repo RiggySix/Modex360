@@ -56,9 +56,9 @@
             this.lblLockedDescription = new DevComponents.DotNetBar.LabelX();
             this.pbAchievement = new System.Windows.Forms.PictureBox();
             this.listGames = new System.Windows.Forms.ListView();
-            this.col1 = new System.Windows.Forms.ColumnHeader();
-            this.col2 = new System.Windows.Forms.ColumnHeader();
-            this.col3 = new System.Windows.Forms.ColumnHeader();
+            this.col1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.col2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.col3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.gpGameSearch = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.cmdClearGameSearch = new DevComponents.DotNetBar.ButtonX();
             this.txtGameSearch = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -101,10 +101,9 @@
             // 
             // 
             // 
-            this.rbPackageEditor.BackgroundStyle.Class = "";
             this.rbPackageEditor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.rbPackageEditor.Controls.Add(this.ribbonPanel2);
             this.rbPackageEditor.Controls.Add(this.ribbonPanel1);
+            this.rbPackageEditor.Controls.Add(this.ribbonPanel2);
             this.rbPackageEditor.Dock = System.Windows.Forms.DockStyle.Top;
             this.rbPackageEditor.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.tabGame,
@@ -126,8 +125,8 @@
             this.rbPackageEditor.SystemText.QatPlaceAboveRibbonText = "&Place Quick Access Toolbar above the Ribbon";
             this.rbPackageEditor.SystemText.QatPlaceBelowRibbonText = "&Place Quick Access Toolbar below the Ribbon";
             this.rbPackageEditor.SystemText.QatRemoveItemText = "&Remove from Quick Access Toolbar";
-            this.rbPackageEditor.Controls.SetChildIndex(this.ribbonPanel1, 0);
             this.rbPackageEditor.Controls.SetChildIndex(this.ribbonPanel2, 0);
+            this.rbPackageEditor.Controls.SetChildIndex(this.ribbonPanel1, 0);
             this.rbPackageEditor.Controls.SetChildIndex(this.panelMain, 0);
             // 
             // panelMain
@@ -142,21 +141,18 @@
             this.panelMain.Controls.Add(this.lblMetaGamerZone);
             this.panelMain.Controls.Add(this.pbProfile);
             this.panelMain.Location = new System.Drawing.Point(0, 53);
-            this.panelMain.Size = new System.Drawing.Size(840, 78);
+            this.panelMain.Size = new System.Drawing.Size(840, 77);
             // 
             // 
             // 
-            this.panelMain.Style.Class = "";
             this.panelMain.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.panelMain.StyleMouseDown.Class = "";
             this.panelMain.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.panelMain.StyleMouseOver.Class = "";
             this.panelMain.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.panelMain.Visible = true;
             // 
@@ -186,21 +182,18 @@
             this.ribbonPanel1.Location = new System.Drawing.Point(0, 53);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel1.Size = new System.Drawing.Size(840, 78);
+            this.ribbonPanel1.Size = new System.Drawing.Size(840, 77);
             // 
             // 
             // 
-            this.ribbonPanel1.Style.Class = "";
             this.ribbonPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel1.StyleMouseDown.Class = "";
             this.ribbonPanel1.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel1.StyleMouseOver.Class = "";
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 2;
             this.ribbonPanel1.Visible = false;
@@ -245,7 +238,6 @@
             // 
             // 
             // 
-            this.pGameAchievements.BackgroundStyle.Class = "";
             this.pGameAchievements.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.pGameAchievements.Location = new System.Drawing.Point(516, 40);
             this.pGameAchievements.Name = "pGameAchievements";
@@ -260,7 +252,6 @@
             // 
             // 
             // 
-            this.pGameGamerscore.BackgroundStyle.Class = "";
             this.pGameGamerscore.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.pGameGamerscore.Location = new System.Drawing.Point(516, 3);
             this.pGameGamerscore.Name = "pGameGamerscore";
@@ -274,7 +265,6 @@
             // 
             // 
             // 
-            this.lblLastPlayed.BackgroundStyle.Class = "";
             this.lblLastPlayed.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblLastPlayed.Location = new System.Drawing.Point(76, 53);
             this.lblLastPlayed.Name = "lblLastPlayed";
@@ -288,7 +278,6 @@
             // 
             // 
             // 
-            this.lblTitleID.BackgroundStyle.Class = "";
             this.lblTitleID.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblTitleID.Location = new System.Drawing.Point(76, 28);
             this.lblTitleID.Name = "lblTitleID";
@@ -302,7 +291,6 @@
             // 
             // 
             // 
-            this.lblGame.BackgroundStyle.Class = "";
             this.lblGame.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblGame.Location = new System.Drawing.Point(76, 3);
             this.lblGame.Name = "lblGame";
@@ -341,17 +329,14 @@
             // 
             // 
             // 
-            this.ribbonPanel2.Style.Class = "";
             this.ribbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel2.StyleMouseDown.Class = "";
             this.ribbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel2.StyleMouseOver.Class = "";
             this.ribbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel2.TabIndex = 3;
             this.ribbonPanel2.Visible = false;
@@ -366,6 +351,7 @@
             this.panelAchievement.Controls.Add(this.dateUnlocked);
             this.panelAchievement.Controls.Add(this.ckUnlockedOffline);
             this.panelAchievement.Controls.Add(this.ckUnlockedOnline);
+            this.panelAchievement.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelAchievement.Location = new System.Drawing.Point(595, -1);
             this.panelAchievement.Name = "panelAchievement";
             this.panelAchievement.Size = new System.Drawing.Size(251, 76);
@@ -398,7 +384,6 @@
             // 
             // 
             // 
-            this.lblGamerscore.BackgroundStyle.Class = "";
             this.lblGamerscore.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblGamerscore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGamerscore.Image = global::Modex360.Properties.Resources.Gamerscore;
@@ -419,18 +404,17 @@
             this.dateUnlocked.ButtonDropDown.Visible = true;
             this.dateUnlocked.CustomFormat = "MM/dd/yyyy h:m:s tt";
             this.dateUnlocked.Format = DevComponents.Editors.eDateTimePickerFormat.Custom;
+            this.dateUnlocked.IsPopupCalendarOpen = false;
             this.dateUnlocked.Location = new System.Drawing.Point(5, 51);
             this.dateUnlocked.MaxDate = new System.DateTime(2015, 12, 31, 0, 0, 0, 0);
             this.dateUnlocked.MinDate = new System.DateTime(2005, 9, 1, 0, 0, 0, 0);
             // 
             // 
             // 
-            this.dateUnlocked.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
             // 
             // 
             // 
             this.dateUnlocked.MonthCalendar.BackgroundStyle.BackColor = System.Drawing.SystemColors.Window;
-            this.dateUnlocked.MonthCalendar.BackgroundStyle.Class = "";
             this.dateUnlocked.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.dateUnlocked.MonthCalendar.ClearButtonVisible = true;
             // 
@@ -442,21 +426,16 @@
             this.dateUnlocked.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.dateUnlocked.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
             this.dateUnlocked.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.dateUnlocked.MonthCalendar.CommandsBackgroundStyle.Class = "";
             this.dateUnlocked.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.dateUnlocked.MonthCalendar.DisplayMonth = new System.DateTime(2010, 7, 1, 0, 0, 0, 0);
-            this.dateUnlocked.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.dateUnlocked.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
             // 
             // 
             // 
             this.dateUnlocked.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
             this.dateUnlocked.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
             this.dateUnlocked.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.dateUnlocked.MonthCalendar.NavigationBackgroundStyle.Class = "";
             this.dateUnlocked.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.dateUnlocked.MonthCalendar.TodayButtonVisible = true;
-            this.dateUnlocked.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
             this.dateUnlocked.Name = "dateUnlocked";
             this.dateUnlocked.Size = new System.Drawing.Size(239, 20);
             this.dateUnlocked.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -467,7 +446,6 @@
             // 
             // 
             // 
-            this.ckUnlockedOffline.BackgroundStyle.Class = "";
             this.ckUnlockedOffline.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ckUnlockedOffline.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
             this.ckUnlockedOffline.FocusCuesEnabled = false;
@@ -484,7 +462,6 @@
             // 
             // 
             // 
-            this.ckUnlockedOnline.BackgroundStyle.Class = "";
             this.ckUnlockedOnline.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ckUnlockedOnline.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
             this.ckUnlockedOnline.FocusCuesEnabled = false;
@@ -502,7 +479,6 @@
             // 
             // 
             // 
-            this.lblUnlockedDescription.BackgroundStyle.Class = "";
             this.lblUnlockedDescription.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblUnlockedDescription.Location = new System.Drawing.Point(76, 40);
             this.lblUnlockedDescription.Name = "lblUnlockedDescription";
@@ -516,7 +492,6 @@
             // 
             // 
             // 
-            this.lblLockedDescription.BackgroundStyle.Class = "";
             this.lblLockedDescription.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblLockedDescription.Location = new System.Drawing.Point(76, 6);
             this.lblLockedDescription.Name = "lblLockedDescription";
@@ -541,8 +516,9 @@
             this.col1,
             this.col2,
             this.col3});
-            this.listGames.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listGames.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listGames.FullRowSelect = true;
+            this.listGames.HideSelection = false;
             this.listGames.Location = new System.Drawing.Point(5, 132);
             this.listGames.MultiSelect = false;
             this.listGames.Name = "listGames";
@@ -559,6 +535,7 @@
             this.gpGameSearch.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.gpGameSearch.Controls.Add(this.cmdClearGameSearch);
             this.gpGameSearch.Controls.Add(this.txtGameSearch);
+            this.gpGameSearch.DisabledBackColor = System.Drawing.Color.Empty;
             this.gpGameSearch.Location = new System.Drawing.Point(5, 640);
             this.gpGameSearch.Name = "gpGameSearch";
             this.gpGameSearch.Size = new System.Drawing.Size(229, 28);
@@ -577,7 +554,6 @@
             this.gpGameSearch.Style.BorderRightWidth = 1;
             this.gpGameSearch.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.gpGameSearch.Style.BorderTopWidth = 1;
-            this.gpGameSearch.Style.Class = "";
             this.gpGameSearch.Style.CornerDiameter = 4;
             this.gpGameSearch.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.gpGameSearch.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
@@ -586,12 +562,10 @@
             // 
             // 
             // 
-            this.gpGameSearch.StyleMouseDown.Class = "";
             this.gpGameSearch.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.gpGameSearch.StyleMouseOver.Class = "";
             this.gpGameSearch.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.gpGameSearch.TabIndex = 3;
             // 
@@ -667,6 +641,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.listAchievements.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.listAchievements.RowHeadersVisible = false;
+            this.listAchievements.RowHeadersWidth = 51;
             this.listAchievements.SelectAllSignVisible = false;
             this.listAchievements.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.listAchievements.ShowCellErrors = false;
@@ -689,9 +664,10 @@
             // 
             // colAchievement
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.colAchievement.DefaultCellStyle = dataGridViewCellStyle2;
             this.colAchievement.HeaderText = "Achievement";
+            this.colAchievement.MinimumWidth = 6;
             this.colAchievement.Name = "colAchievement";
             this.colAchievement.ReadOnly = true;
             this.colAchievement.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -700,9 +676,10 @@
             // colDescription
             // 
             this.colDescription.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.colDescription.DefaultCellStyle = dataGridViewCellStyle3;
             this.colDescription.HeaderText = "Description";
+            this.colDescription.MinimumWidth = 6;
             this.colDescription.Name = "colDescription";
             this.colDescription.ReadOnly = true;
             this.colDescription.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -716,6 +693,7 @@
             this.gpAchievementSearch.Controls.Add(this.ckAchievementUnlockedOnline);
             this.gpAchievementSearch.Controls.Add(this.ckAchievementUnlockedOffline);
             this.gpAchievementSearch.Controls.Add(this.txtAchievementSearch);
+            this.gpAchievementSearch.DisabledBackColor = System.Drawing.Color.Empty;
             this.gpAchievementSearch.Location = new System.Drawing.Point(235, 640);
             this.gpAchievementSearch.Name = "gpAchievementSearch";
             this.gpAchievementSearch.Size = new System.Drawing.Size(610, 28);
@@ -734,7 +712,6 @@
             this.gpAchievementSearch.Style.BorderRightWidth = 1;
             this.gpAchievementSearch.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
             this.gpAchievementSearch.Style.BorderTopWidth = 1;
-            this.gpAchievementSearch.Style.Class = "";
             this.gpAchievementSearch.Style.CornerDiameter = 4;
             this.gpAchievementSearch.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.gpAchievementSearch.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
@@ -743,12 +720,10 @@
             // 
             // 
             // 
-            this.gpAchievementSearch.StyleMouseDown.Class = "";
             this.gpAchievementSearch.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.gpAchievementSearch.StyleMouseOver.Class = "";
             this.gpAchievementSearch.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.gpAchievementSearch.TabIndex = 4;
             // 
@@ -760,7 +735,7 @@
             this.cmdClearAchievementSearch.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.cmdClearAchievementSearch.FocusCuesEnabled = false;
             this.cmdClearAchievementSearch.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdClearAchievementSearch.Location = new System.Drawing.Point(248, 3);
+            this.cmdClearAchievementSearch.Location = new System.Drawing.Point(240, 3);
             this.cmdClearAchievementSearch.Name = "cmdClearAchievementSearch";
             this.cmdClearAchievementSearch.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
             this.cmdClearAchievementSearch.Size = new System.Drawing.Size(49, 20);
@@ -776,13 +751,12 @@
             // 
             // 
             // 
-            this.ckAchievementLocked.BackgroundStyle.Class = "";
             this.ckAchievementLocked.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ckAchievementLocked.Checked = true;
             this.ckAchievementLocked.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ckAchievementLocked.CheckValue = "Y";
             this.ckAchievementLocked.FocusCuesEnabled = false;
-            this.ckAchievementLocked.Location = new System.Drawing.Point(303, 3);
+            this.ckAchievementLocked.Location = new System.Drawing.Point(295, 3);
             this.ckAchievementLocked.Name = "ckAchievementLocked";
             this.ckAchievementLocked.Size = new System.Drawing.Size(63, 20);
             this.ckAchievementLocked.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -797,13 +771,12 @@
             // 
             // 
             // 
-            this.ckAchievementUnlockedOnline.BackgroundStyle.Class = "";
             this.ckAchievementUnlockedOnline.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ckAchievementUnlockedOnline.Checked = true;
             this.ckAchievementUnlockedOnline.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ckAchievementUnlockedOnline.CheckValue = "Y";
             this.ckAchievementUnlockedOnline.FocusCuesEnabled = false;
-            this.ckAchievementUnlockedOnline.Location = new System.Drawing.Point(482, 3);
+            this.ckAchievementUnlockedOnline.Location = new System.Drawing.Point(474, 3);
             this.ckAchievementUnlockedOnline.Name = "ckAchievementUnlockedOnline";
             this.ckAchievementUnlockedOnline.Size = new System.Drawing.Size(102, 20);
             this.ckAchievementUnlockedOnline.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -818,13 +791,12 @@
             // 
             // 
             // 
-            this.ckAchievementUnlockedOffline.BackgroundStyle.Class = "";
             this.ckAchievementUnlockedOffline.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ckAchievementUnlockedOffline.Checked = true;
             this.ckAchievementUnlockedOffline.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ckAchievementUnlockedOffline.CheckValue = "Y";
             this.ckAchievementUnlockedOffline.FocusCuesEnabled = false;
-            this.ckAchievementUnlockedOffline.Location = new System.Drawing.Point(370, 3);
+            this.ckAchievementUnlockedOffline.Location = new System.Drawing.Point(362, 3);
             this.ckAchievementUnlockedOffline.Name = "ckAchievementUnlockedOffline";
             this.ckAchievementUnlockedOffline.Size = new System.Drawing.Size(104, 20);
             this.ckAchievementUnlockedOffline.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -834,8 +806,8 @@
             // 
             // txtAchievementSearch
             // 
-            this.txtAchievementSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAchievementSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
@@ -844,7 +816,7 @@
             this.txtAchievementSearch.Location = new System.Drawing.Point(3, 3);
             this.txtAchievementSearch.MaxLength = 64;
             this.txtAchievementSearch.Name = "txtAchievementSearch";
-            this.txtAchievementSearch.Size = new System.Drawing.Size(242, 20);
+            this.txtAchievementSearch.Size = new System.Drawing.Size(238, 20);
             this.txtAchievementSearch.TabIndex = 0;
             this.txtAchievementSearch.WatermarkText = "Find an achievement...";
             this.txtAchievementSearch.TextChanged += new System.EventHandler(this.populateAchievementList);
@@ -855,7 +827,6 @@
             // 
             // 
             // 
-            this.lblMetaBio.BackgroundStyle.Class = "";
             this.lblMetaBio.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblMetaBio.Location = new System.Drawing.Point(503, 0);
             this.lblMetaBio.Name = "lblMetaBio";
@@ -872,7 +843,6 @@
             // 
             // 
             // 
-            this.pProfileAchievements.BackgroundStyle.Class = "";
             this.pProfileAchievements.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.pProfileAchievements.Location = new System.Drawing.Point(516, 40);
             this.pProfileAchievements.Name = "pProfileAchievements";
@@ -887,7 +857,6 @@
             // 
             // 
             // 
-            this.pProfileGamerscore.BackgroundStyle.Class = "";
             this.pProfileGamerscore.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.pProfileGamerscore.Location = new System.Drawing.Point(516, 3);
             this.pProfileGamerscore.Name = "pProfileGamerscore";
@@ -902,7 +871,6 @@
             // 
             // 
             // 
-            this.lblProfileID.BackgroundStyle.Class = "";
             this.lblProfileID.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblProfileID.Location = new System.Drawing.Point(232, 28);
             this.lblProfileID.Name = "lblProfileID";
@@ -917,7 +885,6 @@
             // 
             // 
             // 
-            this.lblMetaLocation.BackgroundStyle.Class = "";
             this.lblMetaLocation.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblMetaLocation.Location = new System.Drawing.Point(232, 3);
             this.lblMetaLocation.Name = "lblMetaLocation";
@@ -932,7 +899,6 @@
             // 
             // 
             // 
-            this.lblMetaName.BackgroundStyle.Class = "";
             this.lblMetaName.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblMetaName.Location = new System.Drawing.Point(76, 53);
             this.lblMetaName.Name = "lblMetaName";
@@ -947,7 +913,6 @@
             // 
             // 
             // 
-            this.lblMetaMotto.BackgroundStyle.Class = "";
             this.lblMetaMotto.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblMetaMotto.Location = new System.Drawing.Point(76, 28);
             this.lblMetaMotto.Name = "lblMetaMotto";
@@ -962,7 +927,6 @@
             // 
             // 
             // 
-            this.lblMetaGamerZone.BackgroundStyle.Class = "";
             this.lblMetaGamerZone.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblMetaGamerZone.Location = new System.Drawing.Point(76, 3);
             this.lblMetaGamerZone.Name = "lblMetaGamerZone";
@@ -980,8 +944,8 @@
             this.pbProfile.Size = new System.Drawing.Size(64, 64);
             this.pbProfile.TabIndex = 10;
             this.pbProfile.TabStop = false;
-            this.pbProfile.MouseLeave += new System.EventHandler(this.pbProfile_Mouse);
             this.pbProfile.MouseEnter += new System.EventHandler(this.pbProfile_Mouse);
+            this.pbProfile.MouseLeave += new System.EventHandler(this.pbProfile_Mouse);
             // 
             // cmdUnlockAllAchievements
             // 
@@ -1008,19 +972,17 @@
             this.Controls.Add(this.gpGameSearch);
             this.Controls.Add(this.listAchievements);
             this.Controls.Add(this.gpAchievementSearch);
-            this.EnableGlass = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(850, 672);
             this.MinimizeBox = true;
             this.MinimumSize = new System.Drawing.Size(850, 672);
             this.Name = "AchievementUnlocker";
             this.Text = "Achievement Unlocker";
-            this.Controls.SetChildIndex(this.rbPackageEditor, 0);
             this.Controls.SetChildIndex(this.gpAchievementSearch, 0);
             this.Controls.SetChildIndex(this.listAchievements, 0);
             this.Controls.SetChildIndex(this.gpGameSearch, 0);
             this.Controls.SetChildIndex(this.listGames, 0);
+            this.Controls.SetChildIndex(this.rbPackageEditor, 0);
             this.rbPackageEditor.ResumeLayout(false);
             this.rbPackageEditor.PerformLayout();
             this.panelMain.ResumeLayout(false);

@@ -20,7 +20,7 @@ namespace Modex360.Forms
             MdiParent = Main.mainForm;
             Tag = true;
             panelVersion.Text += Config.clientVersion;
-
+            iconRiggy.Location = new Point(35, 6);
         }
 
         private void About_FormClosing(object sender, FormClosingEventArgs e)
@@ -48,6 +48,11 @@ namespace Modex360.Forms
                     this.Close();
                     break;
             }
+        }
+
+        private void iconRiggy_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://modex.riggy.dev");
         }
     }
 }

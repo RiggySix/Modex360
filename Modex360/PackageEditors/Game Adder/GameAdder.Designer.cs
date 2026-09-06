@@ -93,7 +93,6 @@
             // 
             // 
             // 
-            this.rbPackageEditor.BackgroundStyle.Class = "";
             this.rbPackageEditor.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.rbPackageEditor.Controls.Add(this.ribbonPanel1);
             this.rbPackageEditor.Controls.Add(this.ribbonPanel3);
@@ -131,21 +130,18 @@
             this.panelMain.Controls.Add(this.cmdAdd);
             this.panelMain.Controls.Add(this.listTitles);
             this.panelMain.Location = new System.Drawing.Point(0, 53);
-            this.panelMain.Size = new System.Drawing.Size(547, 274);
+            this.panelMain.Size = new System.Drawing.Size(547, 273);
             // 
             // 
             // 
-            this.panelMain.Style.Class = "";
             this.panelMain.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.panelMain.StyleMouseDown.Class = "";
             this.panelMain.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.panelMain.StyleMouseOver.Class = "";
             this.panelMain.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.panelMain.Visible = true;
             // 
@@ -174,17 +170,14 @@
             // 
             // 
             // 
-            this.ribbonPanel1.Style.Class = "";
             this.ribbonPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel1.StyleMouseDown.Class = "";
             this.ribbonPanel1.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel1.StyleMouseOver.Class = "";
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 2;
             this.ribbonPanel1.Visible = false;
@@ -241,6 +234,7 @@
             this.listQueue.AllowUserToResizeColumns = false;
             this.listQueue.AllowUserToResizeRows = false;
             this.listQueue.BackgroundColor = System.Drawing.Color.Silver;
+            this.listQueue.ColumnHeadersHeight = 29;
             this.listQueue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.listQueue.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colTile,
@@ -261,6 +255,7 @@
             this.listQueue.Name = "listQueue";
             this.listQueue.ReadOnly = true;
             this.listQueue.RowHeadersVisible = false;
+            this.listQueue.RowHeadersWidth = 51;
             this.listQueue.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.listQueue.ShowEditingIcon = false;
             this.listQueue.Size = new System.Drawing.Size(541, 238);
@@ -270,6 +265,7 @@
             // colTile
             // 
             this.colTile.HeaderText = "";
+            this.colTile.MinimumWidth = 6;
             this.colTile.Name = "colTile";
             this.colTile.ReadOnly = true;
             this.colTile.Width = 66;
@@ -278,7 +274,7 @@
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Unicode MS", 9F);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewTextBoxColumn1.HeaderText = "Title Info";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 100;
@@ -292,6 +288,7 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewTextBoxColumn3.HeaderText = "GS";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -302,6 +299,7 @@
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewTextBoxColumn4.HeaderText = "Ach #";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -314,6 +312,7 @@
             this.listTitles.AllowUserToResizeColumns = false;
             this.listTitles.AllowUserToResizeRows = false;
             this.listTitles.BackgroundColor = System.Drawing.Color.Silver;
+            this.listTitles.ColumnHeadersHeight = 29;
             this.listTitles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.listTitles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colTitleName,
@@ -333,6 +332,7 @@
             this.listTitles.Location = new System.Drawing.Point(3, 0);
             this.listTitles.Name = "listTitles";
             this.listTitles.ReadOnly = true;
+            this.listTitles.RowHeadersWidth = 51;
             this.listTitles.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.listTitles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.listTitles.ShowEditingIcon = false;
@@ -344,7 +344,7 @@
             // colTitleName
             // 
             this.colTitleName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial Unicode MS", 9F);
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.colTitleName.DefaultCellStyle = dataGridViewCellStyle12;
             this.colTitleName.HeaderText = "Title Name";
             this.colTitleName.MinimumWidth = 100;
@@ -368,6 +368,7 @@
             dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.colGamerscore.DefaultCellStyle = dataGridViewCellStyle14;
             this.colGamerscore.HeaderText = "GS";
+            this.colGamerscore.MinimumWidth = 6;
             this.colGamerscore.Name = "colGamerscore";
             this.colGamerscore.ReadOnly = true;
             this.colGamerscore.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -378,6 +379,7 @@
             dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.colAchievements.DefaultCellStyle = dataGridViewCellStyle15;
             this.colAchievements.HeaderText = "Ach #";
+            this.colAchievements.MinimumWidth = 6;
             this.colAchievements.Name = "colAchievements";
             this.colAchievements.ReadOnly = true;
             this.colAchievements.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -402,17 +404,14 @@
             // 
             // 
             // 
-            this.ribbonPanel2.Style.Class = "";
             this.ribbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel2.StyleMouseDown.Class = "";
             this.ribbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel2.StyleMouseOver.Class = "";
             this.ribbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel2.TabIndex = 3;
             this.ribbonPanel2.Visible = false;
@@ -424,6 +423,7 @@
             this.listAchievements.AllowUserToResizeColumns = false;
             this.listAchievements.AllowUserToResizeRows = false;
             this.listAchievements.BackgroundColor = System.Drawing.Color.Silver;
+            this.listAchievements.ColumnHeadersHeight = 29;
             this.listAchievements.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.listAchievements.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
@@ -444,6 +444,7 @@
             this.listAchievements.Name = "listAchievements";
             this.listAchievements.ReadOnly = true;
             this.listAchievements.RowHeadersVisible = false;
+            this.listAchievements.RowHeadersWidth = 51;
             this.listAchievements.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.listAchievements.ShowEditingIcon = false;
             this.listAchievements.Size = new System.Drawing.Size(541, 271);
@@ -451,7 +452,7 @@
             // 
             // dataGridViewTextBoxColumn5
             // 
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial Unicode MS", 9F);
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewTextBoxColumn5.HeaderText = "Achievement";
@@ -466,6 +467,7 @@
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewTextBoxColumn7.HeaderText = "GS";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             this.dataGridViewTextBoxColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -474,10 +476,11 @@
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial Unicode MS", 9F);
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewTextBoxColumn8.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             this.dataGridViewTextBoxColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -532,17 +535,14 @@
             // 
             // 
             // 
-            this.ribbonPanel3.Style.Class = "";
             this.ribbonPanel3.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel3.StyleMouseDown.Class = "";
             this.ribbonPanel3.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.ribbonPanel3.StyleMouseOver.Class = "";
             this.ribbonPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel3.TabIndex = 4;
             this.ribbonPanel3.Visible = false;
@@ -554,6 +554,7 @@
             this.listAwards.AllowUserToResizeColumns = false;
             this.listAwards.AllowUserToResizeRows = false;
             this.listAwards.BackgroundColor = System.Drawing.Color.Silver;
+            this.listAwards.ColumnHeadersHeight = 29;
             this.listAwards.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.listAwards.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn6,
@@ -573,6 +574,7 @@
             this.listAwards.Name = "listAwards";
             this.listAwards.ReadOnly = true;
             this.listAwards.RowHeadersVisible = false;
+            this.listAwards.RowHeadersWidth = 51;
             this.listAwards.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.listAwards.ShowEditingIcon = false;
             this.listAwards.Size = new System.Drawing.Size(541, 271);
@@ -580,7 +582,7 @@
             // 
             // dataGridViewTextBoxColumn6
             // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Unicode MS", 9F);
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewTextBoxColumn6.HeaderText = "Awards";
@@ -593,10 +595,11 @@
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial Unicode MS", 9F);
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewTextBoxColumn10.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
             this.dataGridViewTextBoxColumn10.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -607,6 +610,7 @@
             this.panelQuickSearch.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelQuickSearch.Controls.Add(this.cmdNext);
             this.panelQuickSearch.Controls.Add(this.txtSearch);
+            this.panelQuickSearch.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelQuickSearch.Location = new System.Drawing.Point(3, 240);
             this.panelQuickSearch.Name = "panelQuickSearch";
             this.panelQuickSearch.Size = new System.Drawing.Size(203, 31);
@@ -646,8 +650,8 @@
             this.txtSearch.Size = new System.Drawing.Size(141, 20);
             this.txtSearch.TabIndex = 0;
             this.txtSearch.WatermarkText = "Quick search...";
-            this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            this.txtSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyDown);
             // 
             // cmdFilter
             // 
@@ -663,11 +667,11 @@
             // 
             // GameAdder
             // 
-            
-            
             this.ClientSize = new System.Drawing.Size(557, 332);
+            this.MaximumSize = new System.Drawing.Size(557, 332);
+            this.MinimumSize = new System.Drawing.Size(557, 332);
             this.Name = "GameAdder";
-            this.Text = "Modex360 Game Adder";
+            this.Text = "Modex 360 Game Adder";
             this.rbPackageEditor.ResumeLayout(false);
             this.rbPackageEditor.PerformLayout();
             this.panelMain.ResumeLayout(false);

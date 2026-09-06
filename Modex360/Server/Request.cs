@@ -229,8 +229,6 @@ namespace Modex360.Server
             catch
             {
                 Program.killLoadingLogo();
-                //if (!Program.doneLoading || !Main.mainForm.InvokeRequired)
-                //    UI.errorBox("Failed to connect to the server!");
                 return false;
             }
             wc.Dispose();

@@ -136,6 +136,7 @@
       <DependentUpon>TitleSettingsManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions\Extensions.cs" />
+    <Compile Include="Functions\RiggyGPDreader.cs" />
     <Compile Include="Functions\Win32.cs" />
     <Compile Include="Handles\ClipboardHelper.cs" />
     <Compile Include="Handles\FatxHandle.cs">
@@ -2020,7 +2021,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -2076,6 +2077,7 @@
       <DependentUpon>ResidentEvil.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
+    <EmbeddedResource Include="Library\Systems\GPD.zip" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -2102,6 +2104,8 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\riggyDev.png" />
+    <EmbeddedResource Include="Library\Systems\RiggyGAdata.xml" />
     <Content Include="Modex.64.ico" />
     <None Include="Resources\ResidentEvil.png" />
     <None Include="Resources\Left4Dead2.png" />

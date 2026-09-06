@@ -2920,7 +2920,7 @@ namespace StateofDecay
                 {0x4d0da56f, "Herringford"},
                 {0x4d2f07db, "Montoya"},
                 {0x4d4bf66b, "Coates"},
-                {0x4d5e0931, "Diamond"},
+                {0x4d5e0931, ""},
                 {0x4d6f3799, "Huffman"},
                 {0x4d9b4c2d, "Cameron"},
                 {0x4daa6e38, "Elswick"},

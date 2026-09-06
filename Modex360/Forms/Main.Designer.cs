@@ -145,7 +145,6 @@
             this.ribbonMain.TabGroupHeight = 14;
             this.ribbonMain.TabIndex = 0;
             this.ribbonMain.Text = "Modex360";
-            this.ribbonMain.SelectedRibbonTabChanged += new System.EventHandler(this.ribbonMain_SelectedRibbonTabChanged);
             // 
             // panelRealtimeEditors
             // 
@@ -265,7 +264,7 @@
             // 
             this.cmdStatus.CanCustomize = false;
             this.cmdStatus.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueWithBackground;
-            this.cmdStatus.FixedSize = new System.Drawing.Size(75, 23);
+            this.cmdStatus.FixedSize = new System.Drawing.Size(80, 23);
             this.cmdStatus.HotTrackingStyle = DevComponents.DotNetBar.eHotTrackingStyle.Image;
             this.cmdStatus.ImageFixedSize = new System.Drawing.Size(16, 16);
             this.cmdStatus.ImagePaddingHorizontal = 0;

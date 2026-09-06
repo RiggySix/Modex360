@@ -31,10 +31,14 @@ namespace Modex360.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             this.rbAbout = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
-            this.panelVersion = new DevComponents.DotNetBar.PanelEx();
+            this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.cmdVisitUs = new DevComponents.DotNetBar.ButtonX();
+            this.panelVersion = new DevComponents.DotNetBar.PanelEx();
             this.gpDevelopers = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.lblDevelopers = new DevComponents.DotNetBar.LabelX();
+            this.tabAbout = new DevComponents.DotNetBar.RibbonTabItem();
+            this.iconRiggy = new DevComponents.DotNetBar.Controls.ReflectionImage();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
             this.panelThanks = new DevComponents.DotNetBar.PanelEx();
@@ -42,17 +46,14 @@ namespace Modex360.Forms
             this.lblThanks3 = new DevComponents.DotNetBar.LabelX();
             this.lblThanks2 = new DevComponents.DotNetBar.LabelX();
             this.lblThanks1 = new DevComponents.DotNetBar.LabelX();
-            this.tabAbout = new DevComponents.DotNetBar.RibbonTabItem();
             this.tabSpecialThanks = new DevComponents.DotNetBar.RibbonTabItem();
-            this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.rbAbout.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
+            this.groupPanel1.SuspendLayout();
             this.gpDevelopers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.ribbonPanel2.SuspendLayout();
             this.panelThanks.SuspendLayout();
-            this.groupPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // rbAbout
@@ -120,6 +121,80 @@ namespace Modex360.Forms
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 1;
             // 
+            // groupPanel1
+            // 
+            this.groupPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.labelX2);
+            this.groupPanel1.Controls.Add(this.cmdVisitUs);
+            this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel1.Location = new System.Drawing.Point(6, 62);
+            this.groupPanel1.Name = "groupPanel1";
+            this.groupPanel1.Size = new System.Drawing.Size(240, 42);
+            // 
+            // 
+            // 
+            this.groupPanel1.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel1.Style.BackColorGradientAngle = 90;
+            this.groupPanel1.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderBottomWidth = 1;
+            this.groupPanel1.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel1.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderLeftWidth = 1;
+            this.groupPanel1.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderRightWidth = 1;
+            this.groupPanel1.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderTopWidth = 1;
+            this.groupPanel1.Style.CornerDiameter = 4;
+            this.groupPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel1.Style.CornerTypeBottomLeft = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel1.Style.CornerTypeBottomRight = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel1.Style.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel1.Style.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            // 
+            // 
+            // 
+            this.groupPanel1.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel1.TabIndex = 7;
+            this.groupPanel1.Text = "Horizon Source By";
+            // 
+            // labelX2
+            // 
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX2.Location = new System.Drawing.Point(3, 2);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(127, 20);
+            this.labelX2.TabIndex = 3;
+            this.labelX2.Text = "unknownv2";
+            this.labelX2.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // cmdVisitUs
+            // 
+            this.cmdVisitUs.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.cmdVisitUs.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.cmdVisitUs.FocusCuesEnabled = false;
+            this.cmdVisitUs.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdVisitUs.Location = new System.Drawing.Point(135, 0);
+            this.cmdVisitUs.Name = "cmdVisitUs";
+            this.cmdVisitUs.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
+            this.cmdVisitUs.Size = new System.Drawing.Size(99, 20);
+            this.cmdVisitUs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cmdVisitUs.TabIndex = 2;
+            this.cmdVisitUs.Text = "Patreon";
+            this.cmdVisitUs.Click += new System.EventHandler(this.cmdVisitUs_Click);
+            // 
             // panelVersion
             // 
             this.panelVersion.CanvasColor = System.Drawing.Color.Transparent;
@@ -140,21 +215,6 @@ namespace Modex360.Forms
             this.panelVersion.Style.GradientAngle = 90;
             this.panelVersion.TabIndex = 3;
             this.panelVersion.Text = "v";
-            // 
-            // cmdVisitUs
-            // 
-            this.cmdVisitUs.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.cmdVisitUs.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.cmdVisitUs.FocusCuesEnabled = false;
-            this.cmdVisitUs.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdVisitUs.Location = new System.Drawing.Point(135, 0);
-            this.cmdVisitUs.Name = "cmdVisitUs";
-            this.cmdVisitUs.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor();
-            this.cmdVisitUs.Size = new System.Drawing.Size(99, 20);
-            this.cmdVisitUs.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cmdVisitUs.TabIndex = 2;
-            this.cmdVisitUs.Text = "Patreon";
-            this.cmdVisitUs.Click += new System.EventHandler(this.cmdVisitUs_Click);
             // 
             // gpDevelopers
             // 
@@ -210,6 +270,30 @@ namespace Modex360.Forms
             this.lblDevelopers.TabIndex = 0;
             this.lblDevelopers.Text = "Riggy";
             this.lblDevelopers.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // tabAbout
+            // 
+            this.tabAbout.Checked = true;
+            this.tabAbout.Name = "tabAbout";
+            this.tabAbout.Panel = this.ribbonPanel1;
+            this.tabAbout.Text = "About";
+            // 
+            // iconRiggy
+            // 
+            this.iconRiggy.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.iconRiggy.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.iconRiggy.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.iconRiggy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconRiggy.Image = global::Modex360.Properties.Resources.riggyDev;
+            this.iconRiggy.Location = new System.Drawing.Point(35, 6);
+            this.iconRiggy.Name = "iconRiggy";
+            this.iconRiggy.ReflectionEnabled = false;
+            this.iconRiggy.Size = new System.Drawing.Size(16, 16);
+            this.iconRiggy.TabIndex = 3;
+            this.iconRiggy.Click += new System.EventHandler(this.iconRiggy_Click);
             // 
             // pbLogo
             // 
@@ -326,13 +410,6 @@ namespace Modex360.Forms
             this.lblThanks1.Text = "TTG SEAN\r\nModified\r\nSotG Caboose\r\nEazy B\r\nNookie\r\nHi!\r\nTheone0522\r\niCypher";
             this.lblThanks1.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // tabAbout
-            // 
-            this.tabAbout.Checked = true;
-            this.tabAbout.Name = "tabAbout";
-            this.tabAbout.Panel = this.ribbonPanel1;
-            this.tabAbout.Text = "About";
-            // 
             // tabSpecialThanks
             // 
             this.tabSpecialThanks.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
@@ -342,71 +419,13 @@ namespace Modex360.Forms
             this.tabSpecialThanks.Panel = this.ribbonPanel2;
             this.tabSpecialThanks.Text = "Special Thanks";
             // 
-            // groupPanel1
-            // 
-            this.groupPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.labelX2);
-            this.groupPanel1.Controls.Add(this.cmdVisitUs);
-            this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel1.Location = new System.Drawing.Point(6, 62);
-            this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(240, 42);
-            // 
-            // 
-            // 
-            this.groupPanel1.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.groupPanel1.Style.BackColorGradientAngle = 90;
-            this.groupPanel1.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.groupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel1.Style.BorderBottomWidth = 1;
-            this.groupPanel1.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.groupPanel1.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel1.Style.BorderLeftWidth = 1;
-            this.groupPanel1.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel1.Style.BorderRightWidth = 1;
-            this.groupPanel1.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel1.Style.BorderTopWidth = 1;
-            this.groupPanel1.Style.CornerDiameter = 4;
-            this.groupPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel1.Style.CornerTypeBottomLeft = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel1.Style.CornerTypeBottomRight = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel1.Style.CornerTypeTopLeft = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel1.Style.CornerTypeTopRight = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            // 
-            // 
-            // 
-            this.groupPanel1.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel1.TabIndex = 7;
-            this.groupPanel1.Text = "Horizon Source By";
-            // 
-            // labelX2
-            // 
-            this.labelX2.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX2.Location = new System.Drawing.Point(3, 2);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(127, 20);
-            this.labelX2.TabIndex = 3;
-            this.labelX2.Text = "unknownv2";
-            this.labelX2.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
             // About
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BottomLeftCornerSize = 0;
             this.BottomRightCornerSize = 0;
             this.ClientSize = new System.Drawing.Size(368, 168);
+            this.Controls.Add(this.iconRiggy);
             this.Controls.Add(this.rbAbout);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -422,11 +441,11 @@ namespace Modex360.Forms
             this.rbAbout.PerformLayout();
             this.ribbonPanel1.ResumeLayout(false);
             this.ribbonPanel1.PerformLayout();
+            this.groupPanel1.ResumeLayout(false);
             this.gpDevelopers.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ribbonPanel2.ResumeLayout(false);
             this.panelThanks.ResumeLayout(false);
-            this.groupPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -450,5 +469,6 @@ namespace Modex360.Forms
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.Controls.ReflectionImage iconRiggy;
     }
 }

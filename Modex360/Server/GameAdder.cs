@@ -1,6 +1,7 @@
-﻿using System;
+﻿/// Fixed by Riggy \\\
+
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Xml.XPath;
 using Modex360.Properties;
@@ -8,6 +9,7 @@ using System.IO;
 using Modex360.Functions;
 using System.Windows.Forms;
 using DevComponents.DotNetBar.Controls;
+using System.Reflection;
 
 namespace Modex360.Server
 {
@@ -75,38 +77,46 @@ namespace Modex360.Server
         {
             if (Titles.Count > 0)
                 return true;
-            if (Settings.Default.GameAdder.Length == 0)
-                return false;
-            XPathNavigator nav = new XPathDocument(new MemoryStream(Encoding.ASCII.GetBytes(Settings.Default.GameAdder))).CreateNavigator();
-            nav.MoveToRoot();
-            nav.MoveToFirstChild();
-            if (nav.HasChildren)
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            using (Stream stream = assembly.GetManifestResourceStream("Modex360.Library.Systems.RiggyGAdata.xml"))
             {
+                if (stream == null)
+                    return false;
+                XPathNavigator nav = new XPathDocument(stream).CreateNavigator();
+                nav.MoveToRoot();
                 nav.MoveToFirstChild();
-                do
+
+                if (nav.HasChildren)
                 {
-                    TitleTemplate title = new TitleTemplate();
-                    title.Meta.TitleName = Encoding.BigEndianUnicode.GetString(Global.hexStringToArray(nav.Value));
-                    nav.MoveToFirstAttribute();
-                    title.Meta.TID = nav.Value;
-                    if (!Titles.ContainsKey(title.Meta.TID))
+                    nav.MoveToFirstChild();
+                    do
                     {
-                        nav.MoveToNextAttribute();
-                        title.Meta.Flagged = nav.ValueAsInt == 1;
-                        nav.MoveToNextAttribute();
-                        title.Meta.TotalAchievements = nav.ValueAsInt;
-                        nav.MoveToNextAttribute();
-                        title.Meta.TotalCredit = nav.ValueAsInt;
-                        nav.MoveToNextAttribute();
-                        title.Meta.TotalAwards = (byte)nav.ValueAsInt;
-                        nav.MoveToNextAttribute();
-                        title.Meta.MaleAwards = (byte)nav.ValueAsInt;
-                        nav.MoveToNextAttribute();
-                        title.Meta.FemaleAwards = (byte)nav.ValueAsInt;
-                        Titles.Add(title.Meta.TID, title);
+                        TitleTemplate title = new TitleTemplate();
+                        title.Meta.TitleName =
+                            Encoding.BigEndianUnicode.GetString(
+                                Global.hexStringToArray(nav.Value));
+                        nav.MoveToFirstAttribute();
+                        title.Meta.TID = nav.Value;
+
+                        if (!Titles.ContainsKey(title.Meta.TID))
+                        {
+                            nav.MoveToNextAttribute();
+                            title.Meta.Flagged = nav.ValueAsInt == 1;
+                            nav.MoveToNextAttribute();
+                            title.Meta.TotalAchievements = nav.ValueAsInt;
+                            nav.MoveToNextAttribute();
+                            title.Meta.TotalCredit = nav.ValueAsInt;
+                            nav.MoveToNextAttribute();
+                            title.Meta.TotalAwards = (byte)nav.ValueAsInt;
+                            nav.MoveToNextAttribute();
+                            title.Meta.MaleAwards = (byte)nav.ValueAsInt;
+                            nav.MoveToNextAttribute();
+                            title.Meta.FemaleAwards = (byte)nav.ValueAsInt;
+                            Titles.Add(title.Meta.TID, title);
+                        }
                     }
+                    while (nav.MoveToFollowing(XPathNodeType.Element));
                 }
-                while (nav.MoveToFollowing(XPathNodeType.Element));
             }
             return true;
         }
@@ -129,7 +139,7 @@ namespace Modex360.Server
             row.CreateCells(listTitles);
             row.Height = 66;
             row.Tag = title.Meta.TID;
-            row.Cells[0].Value = System.Drawing.Image.FromStream(new MemoryStream(title.Tile));
+            row.Cells[0].Value = title.Tile == null ? Resources.QuestionMark : System.Drawing.Image.FromStream(new MemoryStream(title.Tile));
             row.Cells[1].Value = "<b>" + title.Meta.TitleName + "</b><br></br>Title ID: " + title.Meta.TID + "<br></br>Awards: " + title.Meta.TotalAwards.ToString();
             row.Cells[2].Value = title.Meta.TotalCredit;
             row.Cells[3].Value = title.Meta.TotalAchievements;

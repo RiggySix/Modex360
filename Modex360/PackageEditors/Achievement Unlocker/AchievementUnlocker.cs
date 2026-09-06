@@ -1,15 +1,13 @@
+/// Fixed by Riggy \\\
+
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using XboxDataBaseFile;
 using System.IO;
 using Modex360.Properties;
-using DevComponents.DotNetBar.Controls;
 using Modex360.Functions;
 using System.Threading;
 using Modex360.Forms;
@@ -28,7 +26,6 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
         }
 
         private ProfileFile Profile;
-        private const string notSet = "Not Set";
         public override bool Entry()
         {
             Profile = new ProfileFile(Package, 0xfffe07d1);
@@ -60,21 +57,21 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
                         break;
                 }
             else
-                lblMetaGamerZone.Text += notSet;
+                lblMetaGamerZone.Text += "Not Set";
             lblMetaMotto.Text += rec.Read(Profile.SettingsTracker.ReadSetting(XProfileIds.XPROFILE_GAMERCARD_MOTTO))
-                ? UnicodeEncoding.BigEndianUnicode.GetString(rec.varData) : notSet;
+                ? UnicodeEncoding.BigEndianUnicode.GetString(rec.varData) : "Not Set";
             lblMetaName.Text += rec.Read(Profile.SettingsTracker.ReadSetting(XProfileIds.XPROFILE_GAMERCARD_USER_NAME))
-                ? UnicodeEncoding.BigEndianUnicode.GetString(rec.varData) : notSet;
+                ? UnicodeEncoding.BigEndianUnicode.GetString(rec.varData) : "Not Set";
             lblMetaLocation.Text += rec.Read(Profile.SettingsTracker.ReadSetting(XProfileIds.XPROFILE_GAMERCARD_USER_LOCATION))
-                ? UnicodeEncoding.BigEndianUnicode.GetString(rec.varData) : notSet;
+                ? UnicodeEncoding.BigEndianUnicode.GetString(rec.varData) : "Not Set";
             lblMetaBio.Text += rec.Read(Profile.SettingsTracker.ReadSetting(XProfileIds.XPROFILE_GAMERCARD_USER_BIO))
-                ? UnicodeEncoding.BigEndianUnicode.GetString(rec.varData) : notSet;
+                ? UnicodeEncoding.BigEndianUnicode.GetString(rec.varData) : "Not Set";
             lblProfileID.Text = "Profile ID: " + Package.Header.Metadata.Creator.ToString("X");
-            forAch = SettingAsString(247);
-            forGs = SettingAsString(52);
-            noDLC = SettingAsString(18);
-            secretAchievement = SettingAsString(111);
-            unlockAllDisplayed = SettingAsString(184);
+            forAch = "{0}/{1} Achievements{2}";
+            forGs = "{0}/{1} Gamerscore";
+            noDLC = " (DLC not counted)";
+            secretAchievement = "Hidden Achievement";
+            unlockAllDisplayed = "Unlock All";
             populateTitleRecords();
             updateProfileProgressText();
             if (TitlePlayedRecords.Count == 0)
@@ -109,9 +106,9 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
                 = false;
             listAchievements.Rows.Clear();
             listGames.Items.Clear();
-            currentGame = SettingAsInt(190);
+            currentGame = -1;
             achTracker = null;
-            totalPossible = new uint[SettingAsInt(146)];
+            totalPossible = new uint[2];
             TitlePlayedRecords = new List<TitlePlayedRecord>();
             isBusy = false;
         }
@@ -128,7 +125,7 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
                 ? rec.nData : 0;
             pProfileGamerscore.Text = String.Format(forGs, pProfileGamerscore.Value, pProfileGamerscore.Maximum, null);
         }
-        
+
         private void updateGameProgress()
         {
             updateGameRow(currentGame);
@@ -158,7 +155,7 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
                         TitlePlayedRecords.Add(tpr);
                         totalPossible[0] += tpr.AchievementsPossible;
                         totalPossible[1] += tpr.CredPossible;
-                        checkRowAdd(TitlePlayedRecords.Count + SettingAsInt(190));
+                        checkRowAdd(TitlePlayedRecords.Count + -1);
                     }
                 }
             postPopulate();
@@ -198,9 +195,9 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
             isBusy = true;
             listGames.Items.Clear();
             listGames.BeginUpdate();
-            listGames.TileSize = new Size(SettingAsInt(20), SettingAsInt(9));
+            listGames.TileSize = new Size(200, 68);
             listGames.LargeImageList = new ImageList();
-            listGames.LargeImageList.ImageSize = new Size(SettingAsInt(87), SettingAsInt(87));
+            listGames.LargeImageList.ImageSize = new Size(64, 64);
             listGames.LargeImageList.ColorDepth = ColorDepth.Depth32Bit;
         }
 
@@ -222,7 +219,7 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
                     dataFile.ReadRecord(new DataFileId()
                     {
                         Namespace = Namespace.IMAGES,
-                        Id = (ulong)SettingAsLong(32)
+                        Id = (ulong)0x8000
                     })));
             }
             catch { return Resources.QuestionMark; }
@@ -236,7 +233,7 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
             ListViewItem Game = new ListViewItem(TitlePlayedRecords[x].TitleName, listGames.Items.Count);
             Game.SubItems[0].Tag = x;
             Game.SubItems.Add(TitlePlayedRecords[x].TitleId.ToString("X"));
-            Game.SubItems.Add(String.Format(SettingAsString(128), TitlePlayedRecords[x].CredEarned.ToString(), TitlePlayedRecords[x].CredPossible.ToString()));
+            Game.SubItems.Add(String.Format("{0}/{1}", TitlePlayedRecords[x].CredEarned.ToString(), TitlePlayedRecords[x].CredPossible.ToString()));
             return Game;
         }
 
@@ -244,19 +241,20 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
         {
             for (int i = 0; i < listGames.Items.Count; i++)
                 if ((int)listGames.Items[i].SubItems[0].Tag == x)
-                    listGames.Items[i].SubItems[2].Text = String.Format(SettingAsString(128), TitlePlayedRecords[x].CredEarned.ToString(), TitlePlayedRecords[x].CredPossible.ToString());
+                    listGames.Items[i].SubItems[2].Text = String.Format("{0}/{1}", TitlePlayedRecords[x].CredEarned.ToString(), TitlePlayedRecords[x].CredPossible.ToString());
         }
 
         public override void Initialize()
         {
-            int shiftBy = SettingAsInt(124);
+            EnableGlass = false;
+            int shiftBy = 0;
             if (Program.glassEnabled)
             {
                 listGames.Location = new Point(listGames.Location.X - shiftBy, listGames.Location.Y - 1);
                 listAchievements.Location = new Point(listAchievements.Location.X - shiftBy, listAchievements.Location.Y - 1);
                 gpGameSearch.Location = new Point(gpGameSearch.Location.X - shiftBy, gpGameSearch.Location.Y - 1);
                 gpAchievementSearch.Location = new Point(gpAchievementSearch.Location.X - shiftBy, gpAchievementSearch.Location.Y - 1);
-                movePackageManagerIcon(DevComponents.DotNetBar.eItemAlignment.Near);
+                //movePackageManagerIcon(DevComponents.DotNetBar.eItemAlignment.Near);
             }
         }
 
@@ -334,22 +332,22 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
         {
             DataGridViewRow Ach = new DataGridViewRow();
             Ach.CreateCells(listAchievements);
-            Ach.Height = SettingAsInt(9);
+            Ach.Height = 68;
             Ach.Tag = x;
             Ach.Cells[0].Value = getAchievementTile(x);
             Ach.Cells[1].Value = achTracker.Achievements[x].Label.Replace(Environment.NewLine, String.Empty)
                 + Environment.NewLine
-                + (achTracker.Achievements[x].AchievementEarned ? (SettingAsString(118) + (achTracker.Achievements[x].AchievementEarnedOnline
-                    ? SettingAsString(227) : SettingAsString(21))) : SettingAsString(135))
+                + (achTracker.Achievements[x].AchievementEarned ? ("Unlocked" + (achTracker.Achievements[x].AchievementEarnedOnline
+                    ? " Online" : " Offline")) : "Locked")
                 + Environment.NewLine
-                + achTracker.Achievements[x].cred.ToString() + SettingAsString(54);
+                + achTracker.Achievements[x].cred.ToString() + "G";
             if (achTracker.Achievements[x].AchievementEarned)
                 Ach.Cells[2].Value = achTracker.Achievements[x].Description;
             else
                 if (achTracker.Achievements[x].AchievementShowUnachieved)
-                    Ach.Cells[2].Value = achTracker.Achievements[x].Unachieved;
-                else
-                    Ach.Cells[2].Value = secretAchievement;
+                Ach.Cells[2].Value = achTracker.Achievements[x].Unachieved;
+            else
+                Ach.Cells[2].Value = secretAchievement;
             Ach.Cells[2].Value = ((string)Ach.Cells[2].Value).Replace(Environment.NewLine, " ");
             return Ach;
         }
@@ -361,7 +359,7 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
             {
                 if (listAchievements.SelectedRows.Count > 1)
                 {
-                    cmdUnlockAll.Text = SettingAsString(84);
+                    cmdUnlockAll.Text = "Unlock Selected";
                     tabGame.Select();
                 }
                 else
@@ -485,9 +483,11 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
                 saveErrorRebuild(ex);
             }
         }
+        private const string Text_NeverPlayed = "Never";
+
         private void updateLastPlayed(DateTime lastPlayed, long asLong)
         {
-            lblLastPlayed.Text = "<b>Last Played:</b> " + (asLong == 0 ? SettingAsString(15) : lastPlayed.ToString());
+            lblLastPlayed.Text = "<b>Last Played:</b> " + (asLong == 0 ? Text_NeverPlayed : lastPlayed.ToString());
         }
 
         private void pbProfile_Mouse(object sender, EventArgs e)
@@ -514,8 +514,8 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
         {
             if (cmdUnlockAllAchievements.Text.Length == cancel.Length)
                 cancelUnlock = true;
-            else if (TitlePlayedRecords.Count > 0 && UI.messageBox(this, SettingAsString(200),
-                SettingAsString(99), MessageBoxIcon.Question, MessageBoxButtons.YesNoCancel, MessageBoxDefaultButton.Button3) == DialogResult.Yes)
+            else if (TitlePlayedRecords.Count > 0 && UI.messageBox(this, "Unlock all achievements for every game?",
+                "Unlock All Achievements", MessageBoxIcon.Question, MessageBoxButtons.YesNoCancel, MessageBoxDefaultButton.Button3) == DialogResult.Yes)
             {
                 if (Meta.IsFatx && FormHandle.isDeviceWorkerThreadRunning(Meta.DeviceIndex))
                 {
@@ -554,7 +554,7 @@ namespace Modex360.PackageEditors.Achievement_Unlocker
                             loadAchievementRow(x);
                         loadAchievementRow(0);
                         if (!errorThrown && !cancelUnlock)
-                            UI.messageBox(this, SettingAsString(62), SettingAsString(94), MessageBoxIcon.Information);
+                            UI.messageBox(this, "Achievements unlocked successfully!", "Complete", MessageBoxIcon.Information);
                         cancelUnlock = false;
                         cmdUnlockAllAchievements.Text = "Unlock Everything";
                         enableControls(true);

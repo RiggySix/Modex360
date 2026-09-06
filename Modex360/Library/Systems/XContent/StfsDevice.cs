@@ -1,4 +1,6 @@
-﻿using System;
+﻿/// Modified by Riggy \\\
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -216,7 +218,7 @@ namespace XContent
                     this.StfsReferenceFcb(fcb);
 
                     parentFcb = (x != (Name.Length - 1)) ? fcb : parentFcb;
-                    
+
                 }
             }
             else
@@ -279,14 +281,14 @@ namespace XContent
 
         public int GetDirectoryEntryIndex(string Filename)
         {
-            return this.DirectoryEntries.FindIndex(delegate(StfsDirectoryEntry entry)
+            return this.DirectoryEntries.FindIndex(delegate (StfsDirectoryEntry entry)
             {
                 return entry.FileName == Filename;
             });
         }
         public int GetDirectoryEntryIndex(string Filename, ushort DirIndex)
         {
-            return this.DirectoryEntries.FindIndex(delegate(StfsDirectoryEntry entry)
+            return this.DirectoryEntries.FindIndex(delegate (StfsDirectoryEntry entry)
             {
                 return (entry.FileName == Filename) && (entry.DirectoryIndex == DirIndex);
             });
@@ -461,7 +463,7 @@ namespace XContent
 
         public StfsFcb StfsCreateFcb(StfsDirectoryEntry dirEnt, StfsFcb ParentFcb)
         {
-            StfsFcb fcb = Fcbs.Find(delegate(StfsFcb FCB)
+            StfsFcb fcb = Fcbs.Find(delegate (StfsFcb FCB)
             {
                 return FCB.FileName == dirEnt.FileName && dirEnt.FileBounds.Filesize == FCB.Filesize && dirEnt.DirectoryIndex == FCB.ParentDirectoryIndex;
             });
@@ -1181,7 +1183,7 @@ namespace XContent
                 else if (num1 == hashEntry.LevelN.NumberOfFreeBlocks)
                 {
                     this.StfsDiscardBlock(blockNumToDiscard, CurrentLevel);
-                }                
+                }
 
                 freeBlockCount += numberOfFreeBlocks;
                 freePendingBlockCount += numberOfFreePendingBlocks;
@@ -1587,28 +1589,22 @@ namespace XContent
         /// <param name="FileSize">The new end-of-file.</param>
         public void StfsSetEndOfFileInformation(StfsFcb Fcb, uint EndOfFile)
         {
-            // Make sure the new end-of-file is not equal to the current file size
             if (Fcb.Filesize != EndOfFile)
             {
-                // Ensure that the FCB is writeable
                 if (this.StfsEnsureWriteableDirectoryEntry(Fcb) == 0)
                 {
-                    // if the end-of-file is greater than the current file size, expand the file
                     if (EndOfFile > Fcb.Filesize)
                     {
                         this.StfsSetAllocationSize(Fcb, EndOfFile, true);
                     }
 
-                    // Set the file's new size
                     Fcb.Filesize = EndOfFile;
 
-                    // If the FCB is not modifiable, throw an error
                     if ((Fcb.State & 0x20) == 0)
                     {
                         throw new StfsException(string.Format("Detected an invalid FCB state while setting end-of-file information for {0}.", Fcb.FileName));
                     }
 
-                    // FCB has been modified
                     Fcb.State |= 0x10;
                 }
             }
@@ -1677,7 +1673,6 @@ namespace XContent
 
             if (!this.VolumeExtension.ReadOnly)
             {
-                // expand file on disk
                 uint BlockExpansion = (((blockIndex + blocksPerLevel) + blocksPerLevelIndex) << 1) + TotalAllocBlocks;
                 this.IO.Stream.SetLength(this.VolumeExtension.BackingFileOffset + (BlockExpansion * Block));
 
@@ -1953,8 +1948,13 @@ namespace XContent
             }
 
             uint blockNumber = Fcb.LastBlockNumber, retFileLength = 0, oldAllocBlocks = Fcb.AllocationBlocks;
-            if (Fcb.AllocationBlocks != 0 && Fcb.LastBlockNumber == 0xffffffff)
+            if (Fcb.AllocationBlocks != 0)
             {
+                Fcb.LastBlockNumber = 0xffffffff;
+                Fcb.BlockPosition = 0;
+                Fcb.ContiguousBytesRead = 0x1000;
+                Fcb.LastUnContiguousBlockNum = Fcb.FirstBlockNumber;
+
                 blockNumber = this.StfsByteOffsetToBlockNumber(Fcb, Fcb.AllocationBlocks - 1, ref retFileLength);
                 Fcb.LastBlockNumber = blockNumber;
             }
@@ -2208,7 +2208,7 @@ namespace XContent
 
                         if (CurrentBlockNumber >= this.VolumeExtension.NumberOfTotalBlocks)
                         {
-                            throw new StfsException(string.Format("reference to illegal block number 0x{0:0x} [0xC0000032].", hashEntry.Level0.NextBlockNumber.ToString("X")));
+                            throw new StfsException(string.Format("reference to illegal block number 0x{0:X} [0xC0000032].", CurrentBlockNumber));
                         }
 
                         if ((PreviousBlockNumber + 1) == CurrentBlockNumber)

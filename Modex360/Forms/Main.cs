@@ -2,7 +2,6 @@
 using System.Drawing;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
-using Modex360.Server;
 using Modex360.Functions;
 using Modex360.Properties;
 using System.Diagnostics;
@@ -98,7 +97,7 @@ namespace Modex360.Forms
         {
             if (cmdStatus.Text == "Riggy.dev")
             {
-                Process.Start("https://riggy.dev/");
+                Process.Start("https://modex.riggy.dev/");
             } else if (cmdStatus.Text == "WeMod.com") {
                 Process.Start("https://www.wemod.com/");
             }
@@ -358,17 +357,6 @@ namespace Modex360.Forms
         private void cmdFatxContract_Click(object sender, EventArgs e)
         {
             expandContract(false);
-        }
-
-        private void ribbonMain_SelectedRibbonTabChanged(object sender, EventArgs e)
-        {
-            if (ribbonMain.SelectedRibbonTabItem == tabGameMods || ribbonMain.SelectedRibbonTabItem == tabProfileMods || ribbonMain.SelectedRibbonTabItem == tabTools)
-            {
-                cmdStatus.Text = "WeMod.com";
-            } else
-            {
-                cmdStatus.Text = "Riggy.dev";
-            }
         }
     }
 }
